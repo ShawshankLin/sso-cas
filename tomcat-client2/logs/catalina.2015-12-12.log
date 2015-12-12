@@ -1,0 +1,608 @@
+12-Dec-2015 13:58:18.526 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 13:58:18.526 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 13:58:19.328 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 13:58:19.644 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-8080"]
+12-Dec-2015 13:58:19.660 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 13:58:19.660 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1565 ms
+12-Dec-2015 13:58:19.698 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 13:58:19.698 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 13:58:19.729 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\docs
+12-Dec-2015 13:58:20.299 INFO [localhost-startStop-1] org.apache.catalina.util.SessionIdGenerator.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [285] milliseconds.
+12-Dec-2015 13:58:20.315 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\docs has finished in 586 ms
+12-Dec-2015 13:58:20.315 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\examples
+12-Dec-2015 13:58:21.018 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\examples has finished in 703 ms
+12-Dec-2015 13:58:21.019 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\host-manager
+12-Dec-2015 13:58:21.072 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\host-manager has finished in 52 ms
+12-Dec-2015 13:58:21.072 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\manager
+12-Dec-2015 13:58:21.116 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\manager has finished in 44 ms
+12-Dec-2015 13:58:21.117 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\ROOT
+12-Dec-2015 13:58:21.149 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\ROOT has finished in 31 ms
+12-Dec-2015 13:58:21.153 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-8080"]
+12-Dec-2015 13:58:21.165 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 13:58:21.166 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1493 ms
+12-Dec-2015 14:19:22.775 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 14:19:22.775 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 14:19:23.646 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 14:19:23.796 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-8080"]
+12-Dec-2015 14:19:23.799 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:19:23.799 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1371 ms
+12-Dec-2015 14:19:23.831 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 14:19:23.831 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 14:19:23.831 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\docs
+12-Dec-2015 14:19:24.451 INFO [localhost-startStop-1] org.apache.catalina.util.SessionIdGenerator.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [304] milliseconds.
+12-Dec-2015 14:19:24.470 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\docs has finished in 639 ms
+12-Dec-2015 14:19:24.470 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\examples
+12-Dec-2015 14:19:25.162 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Error filterStart
+12-Dec-2015 14:19:25.163 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Context [/examples] startup failed due to previous errors
+12-Dec-2015 14:19:25.176 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\examples has finished in 706 ms
+12-Dec-2015 14:19:25.176 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\host-manager
+12-Dec-2015 14:19:25.216 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\host-manager has finished in 40 ms
+12-Dec-2015 14:19:25.217 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\manager
+12-Dec-2015 14:19:25.265 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\manager has finished in 48 ms
+12-Dec-2015 14:19:25.266 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\ROOT
+12-Dec-2015 14:19:25.297 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\ROOT has finished in 30 ms
+12-Dec-2015 14:19:25.301 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-8080"]
+12-Dec-2015 14:19:25.314 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:19:25.315 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1509 ms
+12-Dec-2015 14:19:25.328 SEVERE [main] org.apache.catalina.core.StandardServer.await StandardServer.await: create[localhost:8005]: 
+ java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:382)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:419)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:713)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:659)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:351)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:485)
+
+12-Dec-2015 14:19:25.331 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-apr-8080"]
+12-Dec-2015 14:19:25.333 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:19:25.334 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+12-Dec-2015 14:19:25.360 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-apr-8080"]
+12-Dec-2015 14:19:25.418 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:19:25.471 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-apr-8080"]
+12-Dec-2015 14:19:25.472 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:19:37.140 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 14:19:37.140 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 14:19:38.004 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 14:19:38.141 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 14:19:38.141 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 14:19:38.156 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1374 ms
+12-Dec-2015 14:19:38.172 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 14:19:38.172 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 14:19:38.188 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\docs
+12-Dec-2015 14:19:38.758 INFO [localhost-startStop-1] org.apache.catalina.util.SessionIdGenerator.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [269] milliseconds.
+12-Dec-2015 14:19:38.774 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\docs has finished in 586 ms
+12-Dec-2015 14:19:38.774 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\examples
+12-Dec-2015 14:19:39.421 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Error filterStart
+12-Dec-2015 14:19:39.422 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Context [/examples] startup failed due to previous errors
+12-Dec-2015 14:19:39.434 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\examples has finished in 660 ms
+12-Dec-2015 14:19:39.435 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\host-manager
+12-Dec-2015 14:19:39.471 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\host-manager has finished in 36 ms
+12-Dec-2015 14:19:39.472 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\manager
+12-Dec-2015 14:19:39.517 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\manager has finished in 45 ms
+12-Dec-2015 14:19:39.518 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\ROOT
+12-Dec-2015 14:19:39.541 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\ROOT has finished in 23 ms
+12-Dec-2015 14:19:39.546 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 14:19:39.558 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 14:19:39.560 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1401 ms
+12-Dec-2015 14:19:39.571 SEVERE [main] org.apache.catalina.core.StandardServer.await StandardServer.await: create[localhost:8005]: 
+ java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:382)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:419)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:713)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:659)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:351)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:485)
+
+12-Dec-2015 14:19:39.574 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 14:19:39.633 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 14:19:39.697 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+12-Dec-2015 14:19:39.713 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 14:19:39.766 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 14:19:39.829 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 14:19:39.830 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 14:19:43.327 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 14:19:43.327 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 14:19:44.183 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 14:19:44.318 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 14:19:44.318 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 14:19:44.334 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1342 ms
+12-Dec-2015 14:19:44.349 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 14:19:44.349 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 14:19:44.365 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\docs
+12-Dec-2015 14:19:44.951 INFO [localhost-startStop-1] org.apache.catalina.util.SessionIdGenerator.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [301] milliseconds.
+12-Dec-2015 14:19:44.967 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\docs has finished in 602 ms
+12-Dec-2015 14:19:44.967 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\examples
+12-Dec-2015 14:19:45.562 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Error filterStart
+12-Dec-2015 14:19:45.564 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Context [/examples] startup failed due to previous errors
+12-Dec-2015 14:19:45.578 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\examples has finished in 611 ms
+12-Dec-2015 14:19:45.579 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\host-manager
+12-Dec-2015 14:19:45.617 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\host-manager has finished in 38 ms
+12-Dec-2015 14:19:45.618 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\manager
+12-Dec-2015 14:19:45.660 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\manager has finished in 42 ms
+12-Dec-2015 14:19:45.661 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\ROOT
+12-Dec-2015 14:19:45.689 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\ROOT has finished in 28 ms
+12-Dec-2015 14:19:45.694 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 14:19:45.706 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 14:19:45.707 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1368 ms
+12-Dec-2015 14:21:36.884 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 14:21:36.884 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 14:21:37.764 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 14:21:37.896 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 14:21:37.911 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 14:21:37.927 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1399 ms
+12-Dec-2015 14:21:37.958 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 14:21:37.958 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 14:21:37.974 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\docs
+12-Dec-2015 14:21:38.563 INFO [localhost-startStop-1] org.apache.catalina.util.SessionIdGenerator.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [289] milliseconds.
+12-Dec-2015 14:21:38.579 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\docs has finished in 605 ms
+12-Dec-2015 14:21:38.579 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\examples
+12-Dec-2015 14:21:39.133 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Error filterStart
+12-Dec-2015 14:21:39.133 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Context [/examples] startup failed due to previous errors
+12-Dec-2015 14:21:39.149 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\examples has finished in 570 ms
+12-Dec-2015 14:21:39.149 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\host-manager
+12-Dec-2015 14:21:39.196 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\host-manager has finished in 31 ms
+12-Dec-2015 14:21:39.197 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\manager
+12-Dec-2015 14:21:39.233 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\manager has finished in 36 ms
+12-Dec-2015 14:21:39.233 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\ROOT
+12-Dec-2015 14:21:39.265 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\ROOT has finished in 32 ms
+12-Dec-2015 14:21:39.265 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 14:21:39.280 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 14:21:39.280 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1354 ms
+12-Dec-2015 14:22:29.572 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 14:22:29.572 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 14:22:30.452 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 14:22:30.605 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 14:22:30.605 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 14:22:30.621 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1377 ms
+12-Dec-2015 14:22:30.652 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 14:22:30.652 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 14:22:30.674 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\docs
+12-Dec-2015 14:22:31.265 INFO [localhost-startStop-1] org.apache.catalina.util.SessionIdGenerator.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [290] milliseconds.
+12-Dec-2015 14:22:31.281 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\docs has finished in 607 ms
+12-Dec-2015 14:22:31.281 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\examples
+12-Dec-2015 14:22:31.867 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Error filterStart
+12-Dec-2015 14:22:31.867 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Context [/examples] startup failed due to previous errors
+12-Dec-2015 14:22:31.883 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\examples has finished in 602 ms
+12-Dec-2015 14:22:31.883 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\host-manager
+12-Dec-2015 14:22:31.914 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\host-manager has finished in 31 ms
+12-Dec-2015 14:22:31.914 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\manager
+12-Dec-2015 14:22:31.962 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\manager has finished in 48 ms
+12-Dec-2015 14:22:31.963 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\ROOT
+12-Dec-2015 14:22:31.983 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\ROOT has finished in 20 ms
+12-Dec-2015 14:22:31.983 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 14:22:31.998 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 14:22:31.998 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1381 ms
+12-Dec-2015 14:28:48.190 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 14:28:48.193 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 14:28:49.033 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 14:28:49.171 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 14:28:49.187 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 14:28:49.187 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1377 ms
+12-Dec-2015 14:28:49.218 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 14:28:49.218 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 14:28:49.218 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\docs
+12-Dec-2015 14:28:49.862 INFO [localhost-startStop-1] org.apache.catalina.util.SessionIdGenerator.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [295] milliseconds.
+12-Dec-2015 14:28:49.878 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\docs has finished in 660 ms
+12-Dec-2015 14:28:49.878 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\examples
+12-Dec-2015 14:28:50.455 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Error filterStart
+12-Dec-2015 14:28:50.455 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Context [/examples] startup failed due to previous errors
+12-Dec-2015 14:28:50.468 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\examples has finished in 590 ms
+12-Dec-2015 14:28:50.469 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\host-manager
+12-Dec-2015 14:28:50.506 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\host-manager has finished in 37 ms
+12-Dec-2015 14:28:50.506 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\manager
+12-Dec-2015 14:28:50.553 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\manager has finished in 47 ms
+12-Dec-2015 14:28:50.554 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\ROOT
+12-Dec-2015 14:28:50.579 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\ROOT has finished in 25 ms
+12-Dec-2015 14:28:50.579 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 14:28:50.595 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 14:28:50.595 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1403 ms
+12-Dec-2015 15:14:00.726 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 15:14:00.755 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 15:14:02.031 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 15:14:02.250 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 15:14:02.269 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 15:14:02.272 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2044 ms
+12-Dec-2015 15:14:02.327 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 15:14:02.333 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 15:14:02.363 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\docs
+12-Dec-2015 15:14:03.200 INFO [localhost-startStop-1] org.apache.catalina.util.SessionIdGenerator.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [388] milliseconds.
+12-Dec-2015 15:14:03.238 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\docs has finished in 875 ms
+12-Dec-2015 15:14:03.238 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\examples
+12-Dec-2015 15:14:03.966 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Error filterStart
+12-Dec-2015 15:14:03.966 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Context [/examples] startup failed due to previous errors
+12-Dec-2015 15:14:03.982 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\examples has finished in 744 ms
+12-Dec-2015 15:14:03.982 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\host-manager
+12-Dec-2015 15:14:04.025 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\host-manager has finished in 43 ms
+12-Dec-2015 15:14:04.026 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\manager
+12-Dec-2015 15:14:04.063 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\manager has finished in 37 ms
+12-Dec-2015 15:14:04.064 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\ROOT
+12-Dec-2015 15:14:04.091 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\ROOT has finished in 27 ms
+12-Dec-2015 15:14:04.097 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 15:14:04.110 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 15:14:04.111 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1838 ms
+12-Dec-2015 15:15:55.212 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 15:15:55.214 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 15:15:56.056 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 15:15:56.225 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 15:15:56.257 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 15:15:56.257 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1448 ms
+12-Dec-2015 15:15:56.310 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 15:15:56.310 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 15:15:56.326 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\docs
+12-Dec-2015 15:15:56.946 INFO [localhost-startStop-1] org.apache.catalina.util.SessionIdGenerator.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [275] milliseconds.
+12-Dec-2015 15:15:56.966 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\docs has finished in 640 ms
+12-Dec-2015 15:15:56.966 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\examples
+12-Dec-2015 15:15:57.559 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [artifactParameterName] not found.  Using default value [ticket]
+12-Dec-2015 15:15:57.559 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [logoutParameterName] not found.  Using default value [logoutRequest]
+12-Dec-2015 15:15:57.571 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serverName] loaded from FilterConfig.getInitParameter with value [http://client2.cas.com:28080]
+12-Dec-2015 15:15:57.571 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [service] not found.  Using default value [null]
+12-Dec-2015 15:15:57.571 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [artifactParameterName] not found.  Using default value [ticket]
+12-Dec-2015 15:15:57.575 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serviceParameterName] not found.  Using default value [service]
+12-Dec-2015 15:15:57.575 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encodeServiceUrl] not found.  Using default value [true]
+12-Dec-2015 15:15:57.575 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas/login]
+12-Dec-2015 15:15:57.575 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [renew] not found.  Using default value [false]
+12-Dec-2015 15:15:57.579 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [gateway] not found.  Using default value [false]
+12-Dec-2015 15:15:57.579 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [gatewayStorageClass] not found.  Using default value [null]
+12-Dec-2015 15:15:57.591 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serverName] loaded from FilterConfig.getInitParameter with value [http://client2.cas.com:28080]
+12-Dec-2015 15:15:57.595 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [service] not found.  Using default value [null]
+12-Dec-2015 15:15:57.595 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [artifactParameterName] not found.  Using default value [ticket]
+12-Dec-2015 15:15:57.595 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serviceParameterName] not found.  Using default value [service]
+12-Dec-2015 15:15:57.595 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encodeServiceUrl] not found.  Using default value [true]
+12-Dec-2015 15:15:57.599 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [proxyReceptorUrl] not found.  Using default value [null]
+12-Dec-2015 15:15:57.599 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [proxyGrantingTicketStorageClass] not found.  Using default value [null]
+12-Dec-2015 15:15:57.599 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [millisBetweenCleanUps] not found.  Using default value [60000]
+12-Dec-2015 15:15:57.599 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [exceptionOnValidationFailure] not found.  Using default value [true]
+12-Dec-2015 15:15:57.603 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [redirectAfterValidation] not found.  Using default value [true]
+12-Dec-2015 15:15:57.603 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [useSession] not found.  Using default value [true]
+12-Dec-2015 15:15:57.607 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [acceptAnyProxy] not found.  Using default value [null]
+12-Dec-2015 15:15:57.607 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [allowedProxyChains] not found.  Using default value [null]
+12-Dec-2015 15:15:57.607 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas]
+12-Dec-2015 15:15:57.615 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [proxyCallbackUrl] not found.  Using default value [null]
+12-Dec-2015 15:15:57.615 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encoding] not found.  Using default value [null]
+12-Dec-2015 15:15:57.619 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [renew] not found.  Using default value [false]
+12-Dec-2015 15:15:57.623 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encoding] not found.  Using default value [null]
+12-Dec-2015 15:15:57.627 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [hostnameVerifier] not found.  Using default value [null]
+12-Dec-2015 15:15:57.627 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [hostnameVerifierConfig] not found.  Using default value [null]
+12-Dec-2015 15:15:57.637 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [roleAttribute] not found.  Using default value [null]
+12-Dec-2015 15:15:57.639 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [ignoreCase] not found.  Using default value [false]
+12-Dec-2015 15:15:57.646 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\examples has finished in 680 ms
+12-Dec-2015 15:15:57.647 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\host-manager
+12-Dec-2015 15:15:57.703 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\host-manager has finished in 56 ms
+12-Dec-2015 15:15:57.703 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\manager
+12-Dec-2015 15:15:57.743 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\manager has finished in 40 ms
+12-Dec-2015 15:15:57.745 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\ROOT
+12-Dec-2015 15:15:57.772 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\ROOT has finished in 27 ms
+12-Dec-2015 15:15:57.781 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 15:15:57.794 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 15:15:57.796 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1528 ms
+12-Dec-2015 15:56:35.133 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 15:56:35.133 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 15:56:36.033 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 15:56:36.187 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 15:56:36.202 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 15:56:36.202 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1421 ms
+12-Dec-2015 15:56:36.234 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 15:56:36.234 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 15:56:36.249 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\docs
+12-Dec-2015 15:56:36.895 INFO [localhost-startStop-1] org.apache.catalina.util.SessionIdGenerator.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [295] milliseconds.
+12-Dec-2015 15:56:36.910 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\docs has finished in 661 ms
+12-Dec-2015 15:56:36.910 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\examples
+12-Dec-2015 15:56:37.515 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [artifactParameterName] not found.  Using default value [ticket]
+12-Dec-2015 15:56:37.517 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [logoutParameterName] not found.  Using default value [logoutRequest]
+12-Dec-2015 15:56:37.537 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serverName] loaded from FilterConfig.getInitParameter with value [http://client2.cas.com:28080]
+12-Dec-2015 15:56:37.539 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [service] not found.  Using default value [null]
+12-Dec-2015 15:56:37.542 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [artifactParameterName] not found.  Using default value [ticket]
+12-Dec-2015 15:56:37.544 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serviceParameterName] not found.  Using default value [service]
+12-Dec-2015 15:56:37.545 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encodeServiceUrl] not found.  Using default value [true]
+12-Dec-2015 15:56:37.546 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas/login]
+12-Dec-2015 15:56:37.549 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [renew] not found.  Using default value [false]
+12-Dec-2015 15:56:37.551 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [gateway] not found.  Using default value [false]
+12-Dec-2015 15:56:37.553 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [gatewayStorageClass] not found.  Using default value [null]
+12-Dec-2015 15:56:37.568 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serverName] loaded from FilterConfig.getInitParameter with value [http://client2.cas.com:28080]
+12-Dec-2015 15:56:37.569 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [service] not found.  Using default value [null]
+12-Dec-2015 15:56:37.571 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [artifactParameterName] not found.  Using default value [ticket]
+12-Dec-2015 15:56:37.573 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serviceParameterName] not found.  Using default value [service]
+12-Dec-2015 15:56:37.577 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encodeServiceUrl] not found.  Using default value [true]
+12-Dec-2015 15:56:37.578 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [proxyReceptorUrl] not found.  Using default value [null]
+12-Dec-2015 15:56:37.580 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [proxyGrantingTicketStorageClass] not found.  Using default value [null]
+12-Dec-2015 15:56:37.582 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [millisBetweenCleanUps] not found.  Using default value [60000]
+12-Dec-2015 15:56:37.584 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [exceptionOnValidationFailure] not found.  Using default value [true]
+12-Dec-2015 15:56:37.586 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [redirectAfterValidation] not found.  Using default value [true]
+12-Dec-2015 15:56:37.588 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [useSession] not found.  Using default value [true]
+12-Dec-2015 15:56:37.590 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [acceptAnyProxy] not found.  Using default value [null]
+12-Dec-2015 15:56:37.592 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [allowedProxyChains] not found.  Using default value [null]
+12-Dec-2015 15:56:37.593 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas]
+12-Dec-2015 15:56:37.600 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [proxyCallbackUrl] not found.  Using default value [null]
+12-Dec-2015 15:56:37.601 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encoding] not found.  Using default value [null]
+12-Dec-2015 15:56:37.603 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [renew] not found.  Using default value [false]
+12-Dec-2015 15:56:37.606 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encoding] not found.  Using default value [null]
+12-Dec-2015 15:56:37.608 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [hostnameVerifier] not found.  Using default value [null]
+12-Dec-2015 15:56:37.610 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [hostnameVerifierConfig] not found.  Using default value [null]
+12-Dec-2015 15:56:37.616 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [roleAttribute] not found.  Using default value [null]
+12-Dec-2015 15:56:37.617 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [ignoreCase] not found.  Using default value [false]
+12-Dec-2015 15:56:37.620 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\examples has finished in 710 ms
+12-Dec-2015 15:56:37.622 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\host-manager
+12-Dec-2015 15:56:37.659 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\host-manager has finished in 37 ms
+12-Dec-2015 15:56:37.668 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\manager
+12-Dec-2015 15:56:37.705 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\manager has finished in 37 ms
+12-Dec-2015 15:56:37.706 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\ROOT
+12-Dec-2015 15:56:37.733 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\ROOT has finished in 27 ms
+12-Dec-2015 15:56:37.738 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 15:56:37.750 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 15:56:37.752 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1540 ms
+12-Dec-2015 15:58:56.117 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 15:58:56.119 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 15:58:57.262 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 15:58:57.394 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 15:58:57.409 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 15:58:57.409 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1677 ms
+12-Dec-2015 15:58:57.432 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 15:58:57.447 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 15:58:57.447 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\docs
+12-Dec-2015 15:58:57.895 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\docs has finished in 448 ms
+12-Dec-2015 15:58:57.895 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\examples
+12-Dec-2015 15:58:58.480 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [artifactParameterName] not found.  Using default value [ticket]
+12-Dec-2015 15:58:58.480 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [logoutParameterName] not found.  Using default value [logoutRequest]
+12-Dec-2015 15:58:58.496 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serverName] loaded from FilterConfig.getInitParameter with value [http://client2.cas.com:28080]
+12-Dec-2015 15:58:58.496 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [service] not found.  Using default value [null]
+12-Dec-2015 15:58:58.496 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [artifactParameterName] not found.  Using default value [ticket]
+12-Dec-2015 15:58:58.496 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serviceParameterName] not found.  Using default value [service]
+12-Dec-2015 15:58:58.496 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encodeServiceUrl] not found.  Using default value [true]
+12-Dec-2015 15:58:58.496 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [proxyReceptorUrl] not found.  Using default value [null]
+12-Dec-2015 15:58:58.496 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [proxyGrantingTicketStorageClass] not found.  Using default value [null]
+12-Dec-2015 15:58:58.496 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [millisBetweenCleanUps] not found.  Using default value [60000]
+12-Dec-2015 15:58:58.496 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [exceptionOnValidationFailure] not found.  Using default value [true]
+12-Dec-2015 15:58:58.512 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [redirectAfterValidation] not found.  Using default value [true]
+12-Dec-2015 15:58:58.512 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [useSession] not found.  Using default value [true]
+12-Dec-2015 15:58:58.512 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [acceptAnyProxy] not found.  Using default value [null]
+12-Dec-2015 15:58:58.512 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [allowedProxyChains] not found.  Using default value [null]
+12-Dec-2015 15:58:58.512 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas]
+12-Dec-2015 15:58:58.512 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [proxyCallbackUrl] not found.  Using default value [null]
+12-Dec-2015 15:58:58.512 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encoding] not found.  Using default value [null]
+12-Dec-2015 15:58:58.512 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [renew] not found.  Using default value [false]
+12-Dec-2015 15:58:58.512 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encoding] not found.  Using default value [null]
+12-Dec-2015 15:58:58.512 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [hostnameVerifier] not found.  Using default value [null]
+12-Dec-2015 15:58:58.528 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [hostnameVerifierConfig] not found.  Using default value [null]
+12-Dec-2015 15:58:58.534 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serverName] loaded from FilterConfig.getInitParameter with value [http://client2.cas.com:28080]
+12-Dec-2015 15:58:58.534 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [service] not found.  Using default value [null]
+12-Dec-2015 15:58:58.534 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [artifactParameterName] not found.  Using default value [ticket]
+12-Dec-2015 15:58:58.534 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serviceParameterName] not found.  Using default value [service]
+12-Dec-2015 15:58:58.534 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encodeServiceUrl] not found.  Using default value [true]
+12-Dec-2015 15:58:58.534 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas/login]
+12-Dec-2015 15:58:58.534 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [renew] not found.  Using default value [false]
+12-Dec-2015 15:58:58.534 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [gateway] not found.  Using default value [false]
+12-Dec-2015 15:58:58.534 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [gatewayStorageClass] not found.  Using default value [null]
+12-Dec-2015 15:58:58.549 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [roleAttribute] not found.  Using default value [null]
+12-Dec-2015 15:58:58.549 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [ignoreCase] not found.  Using default value [false]
+12-Dec-2015 15:58:58.549 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\examples has finished in 654 ms
+12-Dec-2015 15:58:58.549 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\host-manager
+12-Dec-2015 15:58:58.581 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\host-manager has finished in 32 ms
+12-Dec-2015 15:58:58.581 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\manager
+12-Dec-2015 15:58:58.612 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\manager has finished in 31 ms
+12-Dec-2015 15:58:58.612 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\ROOT
+12-Dec-2015 15:58:58.647 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\ROOT has finished in 35 ms
+12-Dec-2015 15:58:58.647 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 15:58:58.663 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 15:58:58.663 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1249 ms
+12-Dec-2015 16:17:30.089 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 16:17:30.093 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 16:17:31.269 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 16:17:31.398 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 16:17:31.414 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 16:17:31.429 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1773 ms
+12-Dec-2015 16:17:31.453 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 16:17:31.453 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 16:17:31.453 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\docs
+12-Dec-2015 16:17:31.885 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\docs has finished in 432 ms
+12-Dec-2015 16:17:31.885 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\examples
+12-Dec-2015 16:17:32.570 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [artifactParameterName] not found.  Using default value [ticket]
+12-Dec-2015 16:17:32.570 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [logoutParameterName] not found.  Using default value [logoutRequest]
+12-Dec-2015 16:17:32.586 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serverName] loaded from FilterConfig.getInitParameter with value [http://client2.cas.com:28080]
+12-Dec-2015 16:17:32.586 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [service] not found.  Using default value [null]
+12-Dec-2015 16:17:32.586 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [artifactParameterName] not found.  Using default value [ticket]
+12-Dec-2015 16:17:32.586 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serviceParameterName] not found.  Using default value [service]
+12-Dec-2015 16:17:32.586 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encodeServiceUrl] not found.  Using default value [true]
+12-Dec-2015 16:17:32.586 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [proxyReceptorUrl] not found.  Using default value [null]
+12-Dec-2015 16:17:32.586 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [proxyGrantingTicketStorageClass] not found.  Using default value [null]
+12-Dec-2015 16:17:32.586 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [millisBetweenCleanUps] not found.  Using default value [60000]
+12-Dec-2015 16:17:32.586 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [exceptionOnValidationFailure] not found.  Using default value [true]
+12-Dec-2015 16:17:32.586 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [redirectAfterValidation] not found.  Using default value [true]
+12-Dec-2015 16:17:32.586 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [useSession] not found.  Using default value [true]
+12-Dec-2015 16:17:32.586 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [acceptAnyProxy] not found.  Using default value [null]
+12-Dec-2015 16:17:32.602 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [allowedProxyChains] not found.  Using default value [null]
+12-Dec-2015 16:17:32.602 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas]
+12-Dec-2015 16:17:32.602 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [proxyCallbackUrl] not found.  Using default value [null]
+12-Dec-2015 16:17:32.602 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encoding] not found.  Using default value [null]
+12-Dec-2015 16:17:32.602 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [renew] not found.  Using default value [false]
+12-Dec-2015 16:17:32.602 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encoding] not found.  Using default value [null]
+12-Dec-2015 16:17:32.602 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [hostnameVerifier] not found.  Using default value [null]
+12-Dec-2015 16:17:32.602 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [hostnameVerifierConfig] not found.  Using default value [null]
+12-Dec-2015 16:17:32.617 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serverName] loaded from FilterConfig.getInitParameter with value [http://client2.cas.com:28080]
+12-Dec-2015 16:17:32.617 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [service] not found.  Using default value [null]
+12-Dec-2015 16:17:32.617 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [artifactParameterName] not found.  Using default value [ticket]
+12-Dec-2015 16:17:32.617 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serviceParameterName] not found.  Using default value [service]
+12-Dec-2015 16:17:32.617 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encodeServiceUrl] not found.  Using default value [true]
+12-Dec-2015 16:17:32.617 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas/login]
+12-Dec-2015 16:17:32.617 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [renew] not found.  Using default value [false]
+12-Dec-2015 16:17:32.633 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [gateway] not found.  Using default value [false]
+12-Dec-2015 16:17:32.633 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [gatewayStorageClass] not found.  Using default value [null]
+12-Dec-2015 16:17:32.633 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [roleAttribute] not found.  Using default value [null]
+12-Dec-2015 16:17:32.633 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [ignoreCase] not found.  Using default value [false]
+12-Dec-2015 16:17:32.633 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\examples has finished in 748 ms
+12-Dec-2015 16:17:32.649 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\host-manager
+12-Dec-2015 16:17:32.671 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\host-manager has finished in 38 ms
+12-Dec-2015 16:17:32.671 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\manager
+12-Dec-2015 16:17:32.702 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\manager has finished in 31 ms
+12-Dec-2015 16:17:32.702 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\ROOT
+12-Dec-2015 16:17:32.733 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\ROOT has finished in 31 ms
+12-Dec-2015 16:17:32.733 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 16:17:32.754 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 16:17:32.755 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1325 ms
+12-Dec-2015 16:17:41.871 INFO [http-apr-28080-exec-3] org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl.retrieve No Proxy Ticket found for [].
+12-Dec-2015 16:29:44.837 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 16:29:44.837 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 16:29:46.014 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 16:29:46.170 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 16:29:46.185 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 16:29:46.185 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1724 ms
+12-Dec-2015 16:29:46.217 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 16:29:46.217 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 16:29:46.232 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\docs
+12-Dec-2015 16:29:46.617 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\docs has finished in 400 ms
+12-Dec-2015 16:29:46.617 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\examples
+12-Dec-2015 16:29:47.259 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [artifactParameterName] not found.  Using default value [ticket]
+12-Dec-2015 16:29:47.259 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [logoutParameterName] not found.  Using default value [logoutRequest]
+12-Dec-2015 16:29:47.259 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serverName] loaded from FilterConfig.getInitParameter with value [http://client2.cas.com:28080]
+12-Dec-2015 16:29:47.259 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [service] not found.  Using default value [null]
+12-Dec-2015 16:29:47.259 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [artifactParameterName] not found.  Using default value [ticket]
+12-Dec-2015 16:29:47.259 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serviceParameterName] not found.  Using default value [service]
+12-Dec-2015 16:29:47.259 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encodeServiceUrl] not found.  Using default value [true]
+12-Dec-2015 16:29:47.275 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [proxyReceptorUrl] not found.  Using default value [null]
+12-Dec-2015 16:29:47.275 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [proxyGrantingTicketStorageClass] not found.  Using default value [null]
+12-Dec-2015 16:29:47.275 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [millisBetweenCleanUps] not found.  Using default value [60000]
+12-Dec-2015 16:29:47.275 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [exceptionOnValidationFailure] not found.  Using default value [true]
+12-Dec-2015 16:29:47.275 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [redirectAfterValidation] not found.  Using default value [true]
+12-Dec-2015 16:29:47.275 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [useSession] not found.  Using default value [true]
+12-Dec-2015 16:29:47.275 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [acceptAnyProxy] not found.  Using default value [null]
+12-Dec-2015 16:29:47.275 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [allowedProxyChains] not found.  Using default value [null]
+12-Dec-2015 16:29:47.275 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas]
+12-Dec-2015 16:29:47.275 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [proxyCallbackUrl] not found.  Using default value [null]
+12-Dec-2015 16:29:47.275 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encoding] not found.  Using default value [null]
+12-Dec-2015 16:29:47.291 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [renew] not found.  Using default value [false]
+12-Dec-2015 16:29:47.291 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encoding] not found.  Using default value [null]
+12-Dec-2015 16:29:47.291 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [hostnameVerifier] not found.  Using default value [null]
+12-Dec-2015 16:29:47.291 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [hostnameVerifierConfig] not found.  Using default value [null]
+12-Dec-2015 16:29:47.291 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serverName] loaded from FilterConfig.getInitParameter with value [http://client2.cas.com:28080]
+12-Dec-2015 16:29:47.291 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [service] not found.  Using default value [null]
+12-Dec-2015 16:29:47.291 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [artifactParameterName] not found.  Using default value [ticket]
+12-Dec-2015 16:29:47.291 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serviceParameterName] not found.  Using default value [service]
+12-Dec-2015 16:29:47.291 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encodeServiceUrl] not found.  Using default value [true]
+12-Dec-2015 16:29:47.291 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas/login]
+12-Dec-2015 16:29:47.291 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [renew] not found.  Using default value [false]
+12-Dec-2015 16:29:47.291 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [gateway] not found.  Using default value [false]
+12-Dec-2015 16:29:47.306 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [gatewayStorageClass] not found.  Using default value [null]
+12-Dec-2015 16:29:47.306 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [roleAttribute] not found.  Using default value [null]
+12-Dec-2015 16:29:47.306 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [ignoreCase] not found.  Using default value [false]
+12-Dec-2015 16:29:47.306 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\examples has finished in 689 ms
+12-Dec-2015 16:29:47.306 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\host-manager
+12-Dec-2015 16:29:47.338 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\host-manager has finished in 32 ms
+12-Dec-2015 16:29:47.338 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\manager
+12-Dec-2015 16:29:47.375 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\manager has finished in 37 ms
+12-Dec-2015 16:29:47.375 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\ROOT
+12-Dec-2015 16:29:47.407 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\ROOT has finished in 32 ms
+12-Dec-2015 16:29:47.407 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 16:29:47.422 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 16:29:47.422 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1238 ms
+12-Dec-2015 16:31:54.220 INFO [http-apr-28080-exec-7] org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl.retrieve No Proxy Ticket found for [].
+12-Dec-2015 16:32:45.128 INFO [http-apr-28080-exec-8] org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl.retrieve No Proxy Ticket found for [].
+12-Dec-2015 16:35:17.603 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/examples]
+12-Dec-2015 16:35:17.603 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/examples] has started
+12-Dec-2015 16:35:18.381 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [artifactParameterName] not found.  Using default value [ticket]
+12-Dec-2015 16:35:18.381 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [logoutParameterName] not found.  Using default value [logoutRequest]
+12-Dec-2015 16:35:18.397 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serverName] loaded from FilterConfig.getInitParameter with value [http://client2.cas.com:28080]
+12-Dec-2015 16:35:18.397 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [service] not found.  Using default value [null]
+12-Dec-2015 16:35:18.397 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [artifactParameterName] not found.  Using default value [ticket]
+12-Dec-2015 16:35:18.397 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serviceParameterName] not found.  Using default value [service]
+12-Dec-2015 16:35:18.397 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encodeServiceUrl] not found.  Using default value [true]
+12-Dec-2015 16:35:18.397 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [proxyReceptorUrl] not found.  Using default value [null]
+12-Dec-2015 16:35:18.397 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [proxyGrantingTicketStorageClass] not found.  Using default value [null]
+12-Dec-2015 16:35:18.397 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [millisBetweenCleanUps] not found.  Using default value [60000]
+12-Dec-2015 16:35:18.397 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [exceptionOnValidationFailure] not found.  Using default value [true]
+12-Dec-2015 16:35:18.397 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [redirectAfterValidation] not found.  Using default value [true]
+12-Dec-2015 16:35:18.397 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [useSession] not found.  Using default value [true]
+12-Dec-2015 16:35:18.397 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [acceptAnyProxy] not found.  Using default value [null]
+12-Dec-2015 16:35:18.397 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [allowedProxyChains] not found.  Using default value [null]
+12-Dec-2015 16:35:18.397 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas]
+12-Dec-2015 16:35:18.397 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [proxyCallbackUrl] not found.  Using default value [null]
+12-Dec-2015 16:35:18.397 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encoding] not found.  Using default value [null]
+12-Dec-2015 16:35:18.397 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [renew] not found.  Using default value [false]
+12-Dec-2015 16:35:18.397 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encoding] not found.  Using default value [null]
+12-Dec-2015 16:35:18.397 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [hostnameVerifier] not found.  Using default value [null]
+12-Dec-2015 16:35:18.397 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [hostnameVerifierConfig] not found.  Using default value [null]
+12-Dec-2015 16:35:18.413 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serverName] loaded from FilterConfig.getInitParameter with value [http://client2.cas.com:28080]
+12-Dec-2015 16:35:18.413 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [service] not found.  Using default value [null]
+12-Dec-2015 16:35:18.413 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [artifactParameterName] not found.  Using default value [ticket]
+12-Dec-2015 16:35:18.413 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serviceParameterName] not found.  Using default value [service]
+12-Dec-2015 16:35:18.413 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encodeServiceUrl] not found.  Using default value [true]
+12-Dec-2015 16:35:18.413 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas/login]
+12-Dec-2015 16:35:18.413 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [renew] not found.  Using default value [false]
+12-Dec-2015 16:35:18.413 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [gateway] not found.  Using default value [false]
+12-Dec-2015 16:35:18.413 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [gatewayStorageClass] not found.  Using default value [null]
+12-Dec-2015 16:35:18.413 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [roleAttribute] not found.  Using default value [null]
+12-Dec-2015 16:35:18.413 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [ignoreCase] not found.  Using default value [false]
+12-Dec-2015 16:35:18.413 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/examples] is completed
+12-Dec-2015 16:35:59.610 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 16:35:59.612 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 16:36:00.816 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 16:36:00.964 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 16:36:00.979 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 16:36:00.982 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1888 ms
+12-Dec-2015 16:36:01.012 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 16:36:01.012 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 16:36:01.027 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\docs
+12-Dec-2015 16:36:01.494 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\docs has finished in 466 ms
+12-Dec-2015 16:36:01.494 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\examples
+12-Dec-2015 16:36:02.147 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [artifactParameterName] not found.  Using default value [ticket]
+12-Dec-2015 16:36:02.147 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [logoutParameterName] not found.  Using default value [logoutRequest]
+12-Dec-2015 16:36:02.162 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serverName] loaded from FilterConfig.getInitParameter with value [http://client2.cas.com:28080]
+12-Dec-2015 16:36:02.162 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [service] not found.  Using default value [null]
+12-Dec-2015 16:36:02.162 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [artifactParameterName] not found.  Using default value [ticket]
+12-Dec-2015 16:36:02.162 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serviceParameterName] not found.  Using default value [service]
+12-Dec-2015 16:36:02.162 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encodeServiceUrl] not found.  Using default value [true]
+12-Dec-2015 16:36:02.162 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [proxyReceptorUrl] not found.  Using default value [null]
+12-Dec-2015 16:36:02.162 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [proxyGrantingTicketStorageClass] not found.  Using default value [null]
+12-Dec-2015 16:36:02.162 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [millisBetweenCleanUps] not found.  Using default value [60000]
+12-Dec-2015 16:36:02.178 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [exceptionOnValidationFailure] not found.  Using default value [true]
+12-Dec-2015 16:36:02.178 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [redirectAfterValidation] not found.  Using default value [true]
+12-Dec-2015 16:36:02.178 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [useSession] not found.  Using default value [true]
+12-Dec-2015 16:36:02.178 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [acceptAnyProxy] not found.  Using default value [null]
+12-Dec-2015 16:36:02.178 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [allowedProxyChains] not found.  Using default value [null]
+12-Dec-2015 16:36:02.178 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas]
+12-Dec-2015 16:36:02.178 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [proxyCallbackUrl] not found.  Using default value [null]
+12-Dec-2015 16:36:02.194 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encoding] not found.  Using default value [null]
+12-Dec-2015 16:36:02.196 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [renew] not found.  Using default value [false]
+12-Dec-2015 16:36:02.197 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encoding] not found.  Using default value [null]
+12-Dec-2015 16:36:02.198 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [hostnameVerifier] not found.  Using default value [null]
+12-Dec-2015 16:36:02.199 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [hostnameVerifierConfig] not found.  Using default value [null]
+12-Dec-2015 16:36:02.200 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serverName] loaded from FilterConfig.getInitParameter with value [http://client2.cas.com:28080]
+12-Dec-2015 16:36:02.200 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [service] not found.  Using default value [null]
+12-Dec-2015 16:36:02.200 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [artifactParameterName] not found.  Using default value [ticket]
+12-Dec-2015 16:36:02.200 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [serviceParameterName] not found.  Using default value [service]
+12-Dec-2015 16:36:02.200 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [encodeServiceUrl] not found.  Using default value [true]
+12-Dec-2015 16:36:02.200 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://server.cas.com:8443/cas/login]
+12-Dec-2015 16:36:02.216 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [renew] not found.  Using default value [false]
+12-Dec-2015 16:36:02.216 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [gateway] not found.  Using default value [false]
+12-Dec-2015 16:36:02.216 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [gatewayStorageClass] not found.  Using default value [null]
+12-Dec-2015 16:36:02.216 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [roleAttribute] not found.  Using default value [null]
+12-Dec-2015 16:36:02.216 INFO [localhost-startStop-1] org.jasig.cas.client.util.AbstractConfigurationFilter.getPropertyFromInitParams Property [ignoreCase] not found.  Using default value [false]
+12-Dec-2015 16:36:02.216 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\examples has finished in 722 ms
+12-Dec-2015 16:36:02.216 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\host-manager
+12-Dec-2015 16:36:02.247 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\host-manager has finished in 31 ms
+12-Dec-2015 16:36:02.247 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\manager
+12-Dec-2015 16:36:02.294 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\manager has finished in 31 ms
+12-Dec-2015 16:36:02.295 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-client2\webapps\ROOT
+12-Dec-2015 16:36:02.316 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-client2\webapps\ROOT has finished in 22 ms
+12-Dec-2015 16:36:02.316 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-28080"]
+12-Dec-2015 16:36:02.331 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-28009"]
+12-Dec-2015 16:36:02.331 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1361 ms
+12-Dec-2015 16:43:02.051 INFO [http-apr-28080-exec-7] org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl.retrieve No Proxy Ticket found for [].
+12-Dec-2015 16:46:17.301 INFO [http-apr-28080-exec-8] org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl.retrieve No Proxy Ticket found for [].
+12-Dec-2015 16:50:03.953 INFO [http-apr-28080-exec-5] org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl.retrieve No Proxy Ticket found for [].

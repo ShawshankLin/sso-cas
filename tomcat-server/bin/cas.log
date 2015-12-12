@@ -1,0 +1,2178 @@
+2015-12-12 13:24:00,306 ERROR [org.jasig.cas.web.init.SafeContextLoaderListener] - SafeContextLoaderListener: 
+The Spring ContextLoaderListener we wrap threw on contextInitialized.
+But for our having caught this error, the web application context would not have initialized.
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.filterChainProxy': Cannot create inner bean '(inner bean)' of type [org.springframework.security.config.http.HttpConfigurationBuilder] while setting bean property 'filterChainMap'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#10': Initialization of bean failed; nested exception is org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java.lang.CharSequence': Invalid byte tag in constant pool: 15
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:281)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:125)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedMap(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:580)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.web.context.ContextLoader.createWebApplicationContext(ContextLoader.java:276)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:197)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:47)
+	at org.jasig.cas.web.init.SafeContextLoaderListener.contextInitialized_aroundBody0(SafeContextLoaderListener.java:62)
+	at org.jasig.cas.web.init.SafeContextLoaderListener.contextInitialized_aroundBody1$advice(SafeContextLoaderListener.java:44)
+	at org.jasig.cas.web.init.SafeContextLoaderListener.contextInitialized(SafeContextLoaderListener.java:1)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4760)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5184)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:724)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:700)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:714)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:919)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1704)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#10': Initialization of bean failed; nested exception is org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java.lang.CharSequence': Invalid byte tag in constant pool: 15
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:527)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:270)
+	... 33 more
+Caused by: org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java.lang.CharSequence': Invalid byte tag in constant pool: 15
+	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+	at org.aspectj.apache.bcel.util.NonCachingClassLoaderRepository.loadJavaClass(NonCachingClassLoaderRepository.java:262)
+	at org.aspectj.apache.bcel.util.NonCachingClassLoaderRepository.loadClass(NonCachingClassLoaderRepository.java:242)
+	at org.aspectj.apache.bcel.util.NonCachingClassLoaderRepository.loadClass(NonCachingClassLoaderRepository.java:249)
+	at org.aspectj.weaver.reflect.Java15AnnotationFinder.getAnnotations(Java15AnnotationFinder.java:202)
+	at org.aspectj.weaver.reflect.ReflectionBasedResolvedMemberImpl.unpackAnnotations(ReflectionBasedResolvedMemberImpl.java:211)
+	at org.aspectj.weaver.reflect.ReflectionBasedResolvedMemberImpl.hasAnnotation(ReflectionBasedResolvedMemberImpl.java:163)
+	at org.aspectj.weaver.patterns.ExactAnnotationTypePattern.matches(ExactAnnotationTypePattern.java:109)
+	at org.aspectj.weaver.patterns.ExactAnnotationTypePattern.matches(ExactAnnotationTypePattern.java:96)
+	at org.aspectj.weaver.patterns.AnnotationPointcut.matchInternal(AnnotationPointcut.java:156)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:55)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.internal.tools.PointcutExpressionImpl.getShadowMatch(PointcutExpressionImpl.java:239)
+	at org.aspectj.weaver.internal.tools.PointcutExpressionImpl.matchesExecution(PointcutExpressionImpl.java:105)
+	at org.aspectj.weaver.internal.tools.PointcutExpressionImpl.matchesMethodExecution(PointcutExpressionImpl.java:96)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getShadowMatch(AspectJExpressionPointcut.java:361)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.matches(AspectJExpressionPointcut.java:249)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:216)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:254)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:286)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:117)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:87)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:68)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:359)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:322)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:407)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1426)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	... 35 more
+2015-12-12 13:25:43,364 ERROR [org.jasig.cas.web.init.SafeContextLoaderListener] - SafeContextLoaderListener: 
+The Spring ContextLoaderListener we wrap threw on contextInitialized.
+But for our having caught this error, the web application context would not have initialized.
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.filterChainProxy': Cannot create inner bean '(inner bean)' of type [org.springframework.security.config.http.HttpConfigurationBuilder] while setting bean property 'filterChainMap'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#10': Initialization of bean failed; nested exception is org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java.lang.CharSequence': Invalid byte tag in constant pool: 15
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:281)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:125)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedMap(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:580)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.web.context.ContextLoader.createWebApplicationContext(ContextLoader.java:276)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:197)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:47)
+	at org.jasig.cas.web.init.SafeContextLoaderListener.contextInitialized_aroundBody0(SafeContextLoaderListener.java:62)
+	at org.jasig.cas.web.init.SafeContextLoaderListener.contextInitialized_aroundBody1$advice(SafeContextLoaderListener.java:44)
+	at org.jasig.cas.web.init.SafeContextLoaderListener.contextInitialized(SafeContextLoaderListener.java:1)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4760)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5184)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:724)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:700)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:714)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:919)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1704)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#10': Initialization of bean failed; nested exception is org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java.lang.CharSequence': Invalid byte tag in constant pool: 15
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:527)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:270)
+	... 33 more
+Caused by: org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java.lang.CharSequence': Invalid byte tag in constant pool: 15
+	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+	at org.aspectj.apache.bcel.util.NonCachingClassLoaderRepository.loadJavaClass(NonCachingClassLoaderRepository.java:262)
+	at org.aspectj.apache.bcel.util.NonCachingClassLoaderRepository.loadClass(NonCachingClassLoaderRepository.java:242)
+	at org.aspectj.apache.bcel.util.NonCachingClassLoaderRepository.loadClass(NonCachingClassLoaderRepository.java:249)
+	at org.aspectj.weaver.reflect.Java15AnnotationFinder.getAnnotations(Java15AnnotationFinder.java:202)
+	at org.aspectj.weaver.reflect.ReflectionBasedResolvedMemberImpl.unpackAnnotations(ReflectionBasedResolvedMemberImpl.java:211)
+	at org.aspectj.weaver.reflect.ReflectionBasedResolvedMemberImpl.hasAnnotation(ReflectionBasedResolvedMemberImpl.java:163)
+	at org.aspectj.weaver.patterns.ExactAnnotationTypePattern.matches(ExactAnnotationTypePattern.java:109)
+	at org.aspectj.weaver.patterns.ExactAnnotationTypePattern.matches(ExactAnnotationTypePattern.java:96)
+	at org.aspectj.weaver.patterns.AnnotationPointcut.matchInternal(AnnotationPointcut.java:156)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:55)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.internal.tools.PointcutExpressionImpl.getShadowMatch(PointcutExpressionImpl.java:239)
+	at org.aspectj.weaver.internal.tools.PointcutExpressionImpl.matchesExecution(PointcutExpressionImpl.java:105)
+	at org.aspectj.weaver.internal.tools.PointcutExpressionImpl.matchesMethodExecution(PointcutExpressionImpl.java:96)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getShadowMatch(AspectJExpressionPointcut.java:361)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.matches(AspectJExpressionPointcut.java:249)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:216)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:254)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:286)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:117)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:87)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:68)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:359)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:322)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:407)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1426)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	... 35 more
+2015-12-12 13:32:48,250 ERROR [org.jasig.cas.web.init.SafeContextLoaderListener] - SafeContextLoaderListener: 
+The Spring ContextLoaderListener we wrap threw on contextInitialized.
+But for our having caught this error, the web application context would not have initialized.
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.filterChainProxy': Cannot create inner bean '(inner bean)' of type [org.springframework.security.config.http.HttpConfigurationBuilder] while setting bean property 'filterChainMap'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#10': Initialization of bean failed; nested exception is org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java.lang.CharSequence': Invalid byte tag in constant pool: 15
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:281)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:125)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedMap(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:580)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.web.context.ContextLoader.createWebApplicationContext(ContextLoader.java:276)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:197)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:47)
+	at org.jasig.cas.web.init.SafeContextLoaderListener.contextInitialized_aroundBody0(SafeContextLoaderListener.java:62)
+	at org.jasig.cas.web.init.SafeContextLoaderListener.contextInitialized_aroundBody1$advice(SafeContextLoaderListener.java:44)
+	at org.jasig.cas.web.init.SafeContextLoaderListener.contextInitialized(SafeContextLoaderListener.java:1)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4760)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5184)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:724)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:700)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:714)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:919)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1704)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#10': Initialization of bean failed; nested exception is org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java.lang.CharSequence': Invalid byte tag in constant pool: 15
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:527)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:270)
+	... 33 more
+Caused by: org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java.lang.CharSequence': Invalid byte tag in constant pool: 15
+	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+	at org.aspectj.apache.bcel.util.NonCachingClassLoaderRepository.loadJavaClass(NonCachingClassLoaderRepository.java:262)
+	at org.aspectj.apache.bcel.util.NonCachingClassLoaderRepository.loadClass(NonCachingClassLoaderRepository.java:242)
+	at org.aspectj.apache.bcel.util.NonCachingClassLoaderRepository.loadClass(NonCachingClassLoaderRepository.java:249)
+	at org.aspectj.weaver.reflect.Java15AnnotationFinder.getAnnotations(Java15AnnotationFinder.java:202)
+	at org.aspectj.weaver.reflect.ReflectionBasedResolvedMemberImpl.unpackAnnotations(ReflectionBasedResolvedMemberImpl.java:211)
+	at org.aspectj.weaver.reflect.ReflectionBasedResolvedMemberImpl.hasAnnotation(ReflectionBasedResolvedMemberImpl.java:163)
+	at org.aspectj.weaver.patterns.ExactAnnotationTypePattern.matches(ExactAnnotationTypePattern.java:109)
+	at org.aspectj.weaver.patterns.ExactAnnotationTypePattern.matches(ExactAnnotationTypePattern.java:96)
+	at org.aspectj.weaver.patterns.AnnotationPointcut.matchInternal(AnnotationPointcut.java:156)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:55)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.internal.tools.PointcutExpressionImpl.getShadowMatch(PointcutExpressionImpl.java:239)
+	at org.aspectj.weaver.internal.tools.PointcutExpressionImpl.matchesExecution(PointcutExpressionImpl.java:105)
+	at org.aspectj.weaver.internal.tools.PointcutExpressionImpl.matchesMethodExecution(PointcutExpressionImpl.java:96)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getShadowMatch(AspectJExpressionPointcut.java:361)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.matches(AspectJExpressionPointcut.java:249)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:216)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:254)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:286)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:117)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:87)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:68)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:359)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:322)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:407)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1426)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	... 35 more
+2015-12-12 13:33:50,069 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 13:33:50,216 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 13:33:51,344 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 13:34:00,878 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 13:34:00,878 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 13:34:09,763 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Beginning ticket cleanup.
+2015-12-12 13:34:09,763 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - 0 tickets found to be removed.
+2015-12-12 13:34:09,764 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Finished ticket cleanup.
+2015-12-12 13:35:11,819 ERROR [org.jasig.cas.web.init.SafeContextLoaderListener] - SafeContextLoaderListener: 
+The Spring ContextLoaderListener we wrap threw on contextInitialized.
+But for our having caught this error, the web application context would not have initialized.
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.filterChainProxy': Cannot create inner bean '(inner bean)' of type [org.springframework.security.config.http.HttpConfigurationBuilder] while setting bean property 'filterChainMap'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#10': Initialization of bean failed; nested exception is org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java.lang.CharSequence': Invalid byte tag in constant pool: 15
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:281)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:125)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedMap(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:580)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.web.context.ContextLoader.createWebApplicationContext(ContextLoader.java:276)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:197)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:47)
+	at org.jasig.cas.web.init.SafeContextLoaderListener.contextInitialized_aroundBody0(SafeContextLoaderListener.java:62)
+	at org.jasig.cas.web.init.SafeContextLoaderListener.contextInitialized_aroundBody1$advice(SafeContextLoaderListener.java:44)
+	at org.jasig.cas.web.init.SafeContextLoaderListener.contextInitialized(SafeContextLoaderListener.java:1)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4760)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5184)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:724)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:700)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:714)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:919)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1704)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#10': Initialization of bean failed; nested exception is org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java.lang.CharSequence': Invalid byte tag in constant pool: 15
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:527)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:270)
+	... 33 more
+Caused by: org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java.lang.CharSequence': Invalid byte tag in constant pool: 15
+	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+	at org.aspectj.apache.bcel.util.NonCachingClassLoaderRepository.loadJavaClass(NonCachingClassLoaderRepository.java:262)
+	at org.aspectj.apache.bcel.util.NonCachingClassLoaderRepository.loadClass(NonCachingClassLoaderRepository.java:242)
+	at org.aspectj.apache.bcel.util.NonCachingClassLoaderRepository.loadClass(NonCachingClassLoaderRepository.java:249)
+	at org.aspectj.weaver.reflect.Java15AnnotationFinder.getAnnotations(Java15AnnotationFinder.java:202)
+	at org.aspectj.weaver.reflect.ReflectionBasedResolvedMemberImpl.unpackAnnotations(ReflectionBasedResolvedMemberImpl.java:211)
+	at org.aspectj.weaver.reflect.ReflectionBasedResolvedMemberImpl.hasAnnotation(ReflectionBasedResolvedMemberImpl.java:163)
+	at org.aspectj.weaver.patterns.ExactAnnotationTypePattern.matches(ExactAnnotationTypePattern.java:109)
+	at org.aspectj.weaver.patterns.ExactAnnotationTypePattern.matches(ExactAnnotationTypePattern.java:96)
+	at org.aspectj.weaver.patterns.AnnotationPointcut.matchInternal(AnnotationPointcut.java:156)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:55)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.internal.tools.PointcutExpressionImpl.getShadowMatch(PointcutExpressionImpl.java:239)
+	at org.aspectj.weaver.internal.tools.PointcutExpressionImpl.matchesExecution(PointcutExpressionImpl.java:105)
+	at org.aspectj.weaver.internal.tools.PointcutExpressionImpl.matchesMethodExecution(PointcutExpressionImpl.java:96)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getShadowMatch(AspectJExpressionPointcut.java:361)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.matches(AspectJExpressionPointcut.java:249)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:216)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:254)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:286)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:117)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:87)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:68)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:359)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:322)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:407)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1426)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	... 35 more
+2015-12-12 13:40:05,742 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 13:40:05,884 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 13:40:07,065 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 13:40:20,098 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 13:40:20,098 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 13:40:24,221 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - AuthenticationHandler: org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler successfully authenticated the user which provided the following credentials: [username: admin]
+2015-12-12 13:40:24,224 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Resolved principal admin
+2015-12-12 13:40:24,225 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Principal found: admin
+2015-12-12 13:40:24,230 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: supplied credentials: [username: admin]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Sat Dec 12 13:40:24 CST 2015
+CLIENT IP ADDRESS: 0:0:0:0:0:0:0:1
+SERVER IP ADDRESS: 0:0:0:0:0:0:0:1
+=============================================================
+
+
+2015-12-12 13:40:24,238 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: TGT-1-WcXP3cbDPltdOfj05lcdALCv9d9b0v6zUOjgDlkcoxoFTkEMsR-cas
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 13:40:24 CST 2015
+CLIENT IP ADDRESS: 0:0:0:0:0:0:0:1
+SERVER IP ADDRESS: 0:0:0:0:0:0:0:1
+=============================================================
+
+
+2015-12-12 13:40:25,452 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Beginning ticket cleanup.
+2015-12-12 13:40:25,453 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - 0 tickets found to be removed.
+2015-12-12 13:40:25,454 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Finished ticket cleanup.
+2015-12-12 13:42:05,786 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 13:42:05,787 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 13:44:05,786 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 13:44:05,786 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 13:46:26,855 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 13:46:27,005 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 13:46:28,240 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 13:46:46,540 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Beginning ticket cleanup.
+2015-12-12 13:46:46,542 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - 0 tickets found to be removed.
+2015-12-12 13:46:46,542 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Finished ticket cleanup.
+2015-12-12 13:48:26,911 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 13:48:26,912 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 13:50:26,906 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 13:50:26,906 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 13:52:26,903 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 13:52:26,903 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 13:54:26,907 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 13:54:26,907 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 13:56:26,904 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 13:56:26,904 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 14:26:32,574 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 14:26:32,700 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 14:26:33,856 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 14:26:35,327 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Shutting down Quartz Scheduler
+2015-12-12 14:26:48,868 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 14:26:49,030 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 14:26:50,162 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 14:26:51,556 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Shutting down Quartz Scheduler
+2015-12-12 14:27:04,761 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 14:27:04,924 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 14:27:06,053 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 14:28:29,940 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 14:28:30,111 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 14:28:31,328 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 14:28:49,621 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Beginning ticket cleanup.
+2015-12-12 14:28:49,623 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - 0 tickets found to be removed.
+2015-12-12 14:28:49,623 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Finished ticket cleanup.
+2015-12-12 14:30:30,012 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 14:30:30,012 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 14:32:30,013 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 14:32:30,013 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 14:36:59,150 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 14:36:59,286 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 14:37:00,419 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 14:37:18,841 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Beginning ticket cleanup.
+2015-12-12 14:37:18,841 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - 0 tickets found to be removed.
+2015-12-12 14:37:18,841 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Finished ticket cleanup.
+2015-12-12 14:38:59,197 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 14:38:59,197 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 14:40:59,186 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 14:40:59,187 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 14:42:18,053 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 14:42:18,053 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 14:42:26,130 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - AuthenticationHandler: org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler successfully authenticated the user which provided the following credentials: [username: admin]
+2015-12-12 14:42:26,134 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Resolved principal admin
+2015-12-12 14:42:26,134 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Principal found: admin
+2015-12-12 14:42:26,138 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: supplied credentials: [username: admin]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Sat Dec 12 14:42:26 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 14:42:26,146 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: TGT-1-SfEXJfDHYEyAP3WP4VaMkWzxrttkfgCp7kCG1q1RiUDrtvTe6x-cas
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 14:42:26 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 14:42:59,198 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 14:42:59,198 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 14:44:28,214 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 14:44:28,368 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 14:44:29,465 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 14:44:47,884 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Beginning ticket cleanup.
+2015-12-12 14:44:47,885 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - 0 tickets found to be removed.
+2015-12-12 14:44:47,885 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Finished ticket cleanup.
+2015-12-12 14:46:28,255 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 14:46:28,255 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 14:47:20,918 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 14:47:21,070 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 14:47:22,225 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 14:47:40,605 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Beginning ticket cleanup.
+2015-12-12 14:47:40,605 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - 0 tickets found to be removed.
+2015-12-12 14:47:40,605 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Finished ticket cleanup.
+2015-12-12 14:49:20,979 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 14:49:20,979 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 14:49:34,686 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 14:49:34,686 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 14:51:20,971 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 14:51:20,972 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 14:57:17,990 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 14:57:18,133 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 14:57:19,250 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 14:57:32,699 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 14:57:32,699 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 14:57:37,676 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Beginning ticket cleanup.
+2015-12-12 14:57:37,676 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - 0 tickets found to be removed.
+2015-12-12 14:57:37,676 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Finished ticket cleanup.
+2015-12-12 14:59:18,037 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 14:59:18,038 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 14:59:41,858 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 14:59:42,006 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 14:59:43,113 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 15:00:01,566 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Beginning ticket cleanup.
+2015-12-12 15:00:01,566 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - 0 tickets found to be removed.
+2015-12-12 15:00:01,566 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Finished ticket cleanup.
+2015-12-12 15:02:33,432 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:02:33,564 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 15:02:34,687 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 15:02:53,168 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Beginning ticket cleanup.
+2015-12-12 15:02:53,168 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - 0 tickets found to be removed.
+2015-12-12 15:02:53,168 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Finished ticket cleanup.
+2015-12-12 15:04:33,466 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 15:04:33,466 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:05:21,556 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:05:21,752 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 15:05:23,559 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 15:05:40,956 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Beginning ticket cleanup.
+2015-12-12 15:05:40,957 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - 0 tickets found to be removed.
+2015-12-12 15:05:40,958 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Finished ticket cleanup.
+2015-12-12 15:06:33,501 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 15:06:33,501 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 15:07:17,788 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - AuthenticationHandler: org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler successfully authenticated the user which provided the following credentials: [username: admin]
+2015-12-12 15:07:17,788 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Resolved principal admin
+2015-12-12 15:07:17,792 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Principal found: admin
+2015-12-12 15:07:17,796 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: supplied credentials: [username: admin]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Sat Dec 12 15:07:17 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 15:07:17,804 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: TGT-1-MN4czCWI16F9kIGpmb7bUkZFPrgcQeKjGCWIpEZ0kuAphcsOe6-cas
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 15:07:17 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 15:07:17,812 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-1-gv6twUVuOMPTwjJBQxyn-cas] for service [http://client1.cas.com:18080/examples/servlets/servlet/HelloWorldExample] for user [admin]
+2015-12-12 15:07:17,812 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-1-gv6twUVuOMPTwjJBQxyn-cas for http://client1.cas.com:18080/examples/servlets/servlet/HelloWorldExample
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 15:07:17 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 15:07:21,625 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 15:07:21,625 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:09:21,621 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 15:09:21,621 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:11:21,620 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 15:11:21,621 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:13:21,628 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 15:13:21,628 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:14:04,786 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:14:04,986 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 15:14:06,285 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 15:14:24,471 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Beginning ticket cleanup.
+2015-12-12 15:14:24,471 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - 0 tickets found to be removed.
+2015-12-12 15:14:24,471 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Finished ticket cleanup.
+2015-12-12 15:15:01,220 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 15:15:01,220 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 15:16:04,851 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 15:16:04,851 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:18:04,849 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 15:18:04,849 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:20:04,848 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 15:20:04,848 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:22:04,857 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 15:22:04,857 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:24:04,853 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 15:24:04,853 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:24:41,475 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - AuthenticationHandler: org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler successfully authenticated the user which provided the following credentials: [username: admin]
+2015-12-12 15:24:41,475 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Resolved principal admin
+2015-12-12 15:24:41,475 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Principal found: admin
+2015-12-12 15:24:41,475 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: supplied credentials: [username: admin]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Sat Dec 12 15:24:41 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 15:24:41,491 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: TGT-1-JSvwPtV3C4kyHw3AgKo0gaptaHMpB9gxkuHGMiK0FsHv5NBFsx-cas
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 15:24:41 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 15:24:41,491 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-1-DwH9xQLWi1Gh43drwecM-cas] for service [http://client1.cas.com:18080/examples/servlets/] for user [admin]
+2015-12-12 15:24:41,491 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-1-DwH9xQLWi1Gh43drwecM-cas for http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 15:24:41 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 15:26:04,849 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 15:26:04,849 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:28:04,852 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 15:28:04,852 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:30:04,855 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 15:30:04,855 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:32:04,848 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 15:32:04,849 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:34:04,856 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 15:34:04,856 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:36:04,859 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 15:36:04,859 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:38:04,858 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 15:38:04,858 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:40:04,856 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 15:40:04,856 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:42:04,849 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 15:42:04,849 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:43:47,754 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:43:47,904 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 15:43:49,062 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 15:44:02,541 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 15:44:02,541 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 15:44:07,461 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Beginning ticket cleanup.
+2015-12-12 15:44:07,477 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - 0 tickets found to be removed.
+2015-12-12 15:44:07,478 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Finished ticket cleanup.
+2015-12-12 15:45:47,801 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 15:45:47,801 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:47:47,801 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 15:47:47,801 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:49:47,798 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 15:49:47,798 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:51:47,799 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 15:51:47,799 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:53:47,803 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 15:53:47,803 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:55:47,813 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 15:55:47,813 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:56:26,767 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:56:26,952 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 15:56:29,255 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 15:56:46,391 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Beginning ticket cleanup.
+2015-12-12 15:56:46,393 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - 0 tickets found to be removed.
+2015-12-12 15:56:46,393 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Finished ticket cleanup.
+2015-12-12 15:57:03,944 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 15:57:03,944 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 15:57:04,012 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_NOT_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 15:57:04 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 15:57:12,670 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - AuthenticationHandler: org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler successfully authenticated the user which provided the following credentials: [username: admin]
+2015-12-12 15:57:12,688 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Resolved principal admin
+2015-12-12 15:57:12,689 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Principal found: admin
+2015-12-12 15:57:12,692 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: supplied credentials: [username: admin]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Sat Dec 12 15:57:12 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 15:57:12,692 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: TGT-1-P1y3wcWWf2lgq7bsg6z21HbJofarjOH9RZ9AaRQRINfiWTVRuc-cas
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 15:57:12 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 15:57:12,692 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: TGT-1-JSvwPtV3C4kyHw3AgKo0gaptaHMpB9gxkuHGMiK0FsHv5NBFsx-cas
+ACTION: TICKET_GRANTING_TICKET_DESTROYED
+APPLICATION: CAS
+WHEN: Sat Dec 12 15:57:12 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 15:57:12,708 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-1-dX1DXa0ta7R0mFhte7nD-cas] for service [http://client1.cas.com:18080/examples/servlets/] for user [admin]
+2015-12-12 15:57:12,708 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-1-dX1DXa0ta7R0mFhte7nD-cas for http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 15:57:12 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 15:58:50,289 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 15:58:50,609 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 15:58:52,832 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 15:59:09,906 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Beginning ticket cleanup.
+2015-12-12 15:59:09,906 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - 0 tickets found to be removed.
+2015-12-12 15:59:09,910 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Finished ticket cleanup.
+2015-12-12 15:59:23,526 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 15:59:23,526 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 15:59:23,579 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_NOT_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 15:59:23 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 15:59:29,083 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - AuthenticationHandler: org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler successfully authenticated the user which provided the following credentials: [username: admin]
+2015-12-12 15:59:29,083 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Resolved principal admin
+2015-12-12 15:59:29,099 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Principal found: admin
+2015-12-12 15:59:29,101 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: supplied credentials: [username: admin]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Sat Dec 12 15:59:29 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 15:59:29,109 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: TGT-1-07eSOKNi79LfCeybfht1JiTTKAdnit2PSSjbfqmioPb5B1tB2X-cas
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 15:59:29 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 15:59:29,113 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: TGT-1-P1y3wcWWf2lgq7bsg6z21HbJofarjOH9RZ9AaRQRINfiWTVRuc-cas
+ACTION: TICKET_GRANTING_TICKET_DESTROYED
+APPLICATION: CAS
+WHEN: Sat Dec 12 15:59:29 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 15:59:29,121 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-1-S9l2ZClw6TE9bdOz1NNl-cas] for service [http://client1.cas.com:18080/examples/servlets/] for user [admin]
+2015-12-12 15:59:29,125 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-1-S9l2ZClw6TE9bdOz1NNl-cas for http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 15:59:29 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:01:19,883 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:01:20,093 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 16:01:22,055 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 16:01:39,516 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Beginning ticket cleanup.
+2015-12-12 16:01:39,516 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - 0 tickets found to be removed.
+2015-12-12 16:01:39,516 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Finished ticket cleanup.
+2015-12-12 16:01:57,401 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 16:01:57,401 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 16:01:57,447 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_NOT_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:01:57 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:02:05,219 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - AuthenticationHandler: org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler successfully authenticated the user which provided the following credentials: [username: admin]
+2015-12-12 16:02:05,219 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Resolved principal admin
+2015-12-12 16:02:05,219 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Principal found: admin
+2015-12-12 16:02:05,235 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: supplied credentials: [username: admin]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:02:05 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:02:05,235 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: TGT-1-STKzXxgzmHO4NgprkuihokH3gS4rD1XMx9rAvpmRfd3a0PzFCM-cas
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:02:05 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:02:05,235 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: TGT-1-07eSOKNi79LfCeybfht1JiTTKAdnit2PSSjbfqmioPb5B1tB2X-cas
+ACTION: TICKET_GRANTING_TICKET_DESTROYED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:02:05 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:02:05,254 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-1-B3bvu7RpvImsIe6gIyQ1-cas] for service [http://client1.cas.com:18080/examples/servlets/] for user [admin]
+2015-12-12 16:02:05,255 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-1-B3bvu7RpvImsIe6gIyQ1-cas for http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:02:05 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:03:19,939 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 16:03:19,939 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:04:56,434 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:04:56,686 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 16:04:57,944 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 16:05:15,946 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Beginning ticket cleanup.
+2015-12-12 16:05:15,946 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - 0 tickets found to be removed.
+2015-12-12 16:05:15,946 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Finished ticket cleanup.
+2015-12-12 16:05:22,398 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 16:05:22,398 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 16:05:22,451 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_NOT_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:05:22 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:06:24,456 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - AuthenticationHandler: org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler successfully authenticated the user which provided the following credentials: [username: admin]
+2015-12-12 16:06:24,456 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Resolved principal admin
+2015-12-12 16:06:24,472 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Principal found: admin
+2015-12-12 16:06:24,472 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: supplied credentials: [username: admin]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:06:24 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:06:24,488 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: TGT-1-Wyxambwv7LqZDVdoeyubrpbc1KcQnLpvqo41ksnv3cGRdYqMRY-cas
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:06:24 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:06:24,488 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-1-dXcgSy5VWfYKtrP7ZgVA-cas] for service [http://client1.cas.com:18080/examples/servlets/] for user [admin]
+2015-12-12 16:06:24,488 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-1-dXcgSy5VWfYKtrP7ZgVA-cas for http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:06:24 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:06:56,499 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 16:06:56,500 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:09:58,742 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:09:58,889 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 16:10:00,064 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 16:10:18,446 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Beginning ticket cleanup.
+2015-12-12 16:10:18,446 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - 0 tickets found to be removed.
+2015-12-12 16:10:18,446 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Finished ticket cleanup.
+2015-12-12 16:11:58,796 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 16:11:58,797 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:12:04,867 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 16:12:04,867 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 16:12:04,932 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_NOT_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:12:04 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:12:09,337 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - AuthenticationHandler: org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler successfully authenticated the user which provided the following credentials: [username: admin]
+2015-12-12 16:12:09,337 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Resolved principal admin
+2015-12-12 16:12:09,337 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Principal found: admin
+2015-12-12 16:12:09,337 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: supplied credentials: [username: admin]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:12:09 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:12:09,353 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: TGT-1-Sn1Of1Vmp3YR1YTkcfmU54kpPjfVsfNeYobGCW3bWIuZsGimlz-cas
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:12:09 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:12:09,353 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: TGT-1-Wyxambwv7LqZDVdoeyubrpbc1KcQnLpvqo41ksnv3cGRdYqMRY-cas
+ACTION: TICKET_GRANTING_TICKET_DESTROYED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:12:09 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:12:09,353 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-1-NVwzd9NPwchnbgu72Nm4-cas] for service [http://client1.cas.com:18080/examples/servlets/] for user [admin]
+2015-12-12 16:12:09,368 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-1-NVwzd9NPwchnbgu72Nm4-cas for http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:12:09 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:12:09,674 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: ST-1-NVwzd9NPwchnbgu72Nm4-cas
+ACTION: SERVICE_TICKET_VALIDATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:12:09 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:12:35,605 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - AuthenticationHandler: org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler successfully authenticated the user which provided the following credentials: [username: admin]
+2015-12-12 16:12:35,610 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Resolved principal admin
+2015-12-12 16:12:35,611 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Principal found: admin
+2015-12-12 16:12:35,612 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: supplied credentials: [username: admin]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:12:35 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:12:35,615 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: TGT-2-NEdmpvnz7gCl7GxjDsLH2xVfXcJFZ9lqlKbaCcOTDlX1Ppyk0S-cas
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:12:35 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:12:35,619 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-2-rhqcTWtkGdqabIbQvYxu-cas] for service [http://client1.cas.com:18080/examples/servlets/] for user [admin]
+2015-12-12 16:12:35,620 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-2-rhqcTWtkGdqabIbQvYxu-cas for http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:12:35 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:12:35,647 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: ST-2-rhqcTWtkGdqabIbQvYxu-cas
+ACTION: SERVICE_TICKET_VALIDATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:12:35 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:13:23,068 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:13:23,296 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 16:13:24,812 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 16:13:42,483 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Beginning ticket cleanup.
+2015-12-12 16:13:42,483 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - 0 tickets found to be removed.
+2015-12-12 16:13:42,483 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Finished ticket cleanup.
+2015-12-12 16:13:59,176 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 16:13:59,176 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 16:13:59,235 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_NOT_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:13:59 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:14:05,044 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - AuthenticationHandler: org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler successfully authenticated the user which provided the following credentials: [username: admin]
+2015-12-12 16:14:05,049 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Resolved principal admin
+2015-12-12 16:14:05,050 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Principal found: admin
+2015-12-12 16:14:05,054 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: supplied credentials: [username: admin]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:14:05 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:14:05,060 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: TGT-1-xMMbzzbkP2MxXcJyrwfEcvv3nUa1HOgCt3ox9uqevN5qP1r0u6-cas
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:14:05 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:14:05,066 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: TGT-2-NEdmpvnz7gCl7GxjDsLH2xVfXcJFZ9lqlKbaCcOTDlX1Ppyk0S-cas
+ACTION: TICKET_GRANTING_TICKET_DESTROYED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:14:05 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:14:05,071 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-1-VwhYrAG4m43KXox3eV5l-cas] for service [http://client1.cas.com:18080/examples/servlets/] for user [admin]
+2015-12-12 16:14:05,072 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-1-VwhYrAG4m43KXox3eV5l-cas for http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:14:05 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:15:19,453 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:15:19,611 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 16:15:21,020 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 16:15:38,978 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Beginning ticket cleanup.
+2015-12-12 16:15:38,980 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - 0 tickets found to be removed.
+2015-12-12 16:15:38,981 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Finished ticket cleanup.
+2015-12-12 16:15:50,325 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 16:15:50,325 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 16:15:50,378 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_NOT_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:15:50 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:15:56,341 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - AuthenticationHandler: org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler successfully authenticated the user which provided the following credentials: [username: admin]
+2015-12-12 16:15:56,344 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Resolved principal admin
+2015-12-12 16:15:56,345 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Principal found: admin
+2015-12-12 16:15:56,348 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: supplied credentials: [username: admin]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:15:56 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:15:56,354 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: TGT-1-udy1x1bhBlAHaWBB7ChZbpmHko3yPiSKWFbA6gcrFbc6ywqKde-cas
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:15:56 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:15:56,358 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: TGT-1-xMMbzzbkP2MxXcJyrwfEcvv3nUa1HOgCt3ox9uqevN5qP1r0u6-cas
+ACTION: TICKET_GRANTING_TICKET_DESTROYED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:15:56 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:15:56,362 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-1-VlJFM3QINMYhaG9wcNbD-cas] for service [http://client1.cas.com:18080/examples/servlets/] for user [admin]
+2015-12-12 16:15:56,363 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-1-VlJFM3QINMYhaG9wcNbD-cas for http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:15:56 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:16:42,181 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:16:42,319 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 16:16:43,496 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 16:16:51,501 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - ServiceTicket [ST-1-DwH9xQLWi1Gh43drwecM-cas] does not exist.
+2015-12-12 16:16:51,505 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: ST-1-DwH9xQLWi1Gh43drwecM-cas
+ACTION: SERVICE_TICKET_VALIDATE_FAILED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:16:51 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:17:01,858 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Beginning ticket cleanup.
+2015-12-12 16:17:01,859 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - 0 tickets found to be removed.
+2015-12-12 16:17:01,860 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Finished ticket cleanup.
+2015-12-12 16:17:14,237 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 16:17:14,237 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 16:17:14,265 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_NOT_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:17:14 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:17:18,558 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - AuthenticationHandler: org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler successfully authenticated the user which provided the following credentials: [username: admin]
+2015-12-12 16:17:18,561 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Resolved principal admin
+2015-12-12 16:17:18,563 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Principal found: admin
+2015-12-12 16:17:18,567 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: supplied credentials: [username: admin]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:17:18 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:17:18,573 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: TGT-1-OfDKnc4qrxwBc6JXb0PNPmfpz3jDEfuscR1yyWDXlzxDhMSuWJ-cas
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:17:18 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:17:18,578 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: TGT-1-udy1x1bhBlAHaWBB7ChZbpmHko3yPiSKWFbA6gcrFbc6ywqKde-cas
+ACTION: TICKET_GRANTING_TICKET_DESTROYED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:17:18 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:17:18,584 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-1-ca7kYeOotlhaEj7OUJup-cas] for service [http://client1.cas.com:18080/examples/servlets/] for user [admin]
+2015-12-12 16:17:18,585 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-1-ca7kYeOotlhaEj7OUJup-cas for http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:17:18 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:17:18,613 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: ST-1-ca7kYeOotlhaEj7OUJup-cas
+ACTION: SERVICE_TICKET_VALIDATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:17:18 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:17:41,578 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-2-YtOutJXT40Nqe0tIw6XB-cas] for service [http://client2.cas.com:28080/examples/servlets/] for user [admin]
+2015-12-12 16:17:41,582 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-2-YtOutJXT40Nqe0tIw6XB-cas for http://client2.cas.com:28080/examples/servlets/
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:17:41 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:17:41,859 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: ST-2-YtOutJXT40Nqe0tIw6XB-cas
+ACTION: SERVICE_TICKET_VALIDATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:17:41 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:18:17,562 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: TGT-1-OfDKnc4qrxwBc6JXb0PNPmfpz3jDEfuscR1yyWDXlzxDhMSuWJ-cas
+ACTION: TICKET_GRANTING_TICKET_DESTROYED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:18:17 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:18:42,223 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 16:18:42,224 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:20:42,224 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 16:20:42,224 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:22:42,219 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 16:22:42,219 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:24:07,363 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_NOT_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:24:07 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:24:12,002 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - AuthenticationHandler: org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler successfully authenticated the user which provided the following credentials: [username: admin]
+2015-12-12 16:24:12,002 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Resolved principal admin
+2015-12-12 16:24:12,002 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Principal found: admin
+2015-12-12 16:24:12,002 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: supplied credentials: [username: admin]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:24:12 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:24:12,002 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: TGT-2-tRQZN95sEDmkWAmcPASmqGPTOIAAVwAdwtJrcKHTjfRVlzkqUT-cas
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:24:12 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:24:12,002 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: TGT-1-STKzXxgzmHO4NgprkuihokH3gS4rD1XMx9rAvpmRfd3a0PzFCM-cas
+ACTION: TICKET_GRANTING_TICKET_DESTROYED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:24:12 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:24:12,017 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-3-xuDIvfQgKvv3gwbJyPEf-cas] for service [http://client1.cas.com:18080/examples/servlets/] for user [admin]
+2015-12-12 16:24:12,018 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-3-xuDIvfQgKvv3gwbJyPEf-cas for http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:24:12 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:24:12,024 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: ST-3-xuDIvfQgKvv3gwbJyPEf-cas
+ACTION: SERVICE_TICKET_VALIDATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:24:12 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:24:42,222 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 16:24:42,222 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:25:30,877 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: TGT-2-tRQZN95sEDmkWAmcPASmqGPTOIAAVwAdwtJrcKHTjfRVlzkqUT-cas
+ACTION: TICKET_GRANTING_TICKET_DESTROYED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:25:30 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:26:42,220 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 16:26:42,220 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:28:42,229 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 16:28:42,229 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:29:34,808 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:29:34,972 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 16:29:36,112 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 16:29:54,507 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Beginning ticket cleanup.
+2015-12-12 16:29:54,523 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - 0 tickets found to be removed.
+2015-12-12 16:29:54,523 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Finished ticket cleanup.
+2015-12-12 16:30:16,210 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 16:30:16,210 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 16:31:34,870 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 16:31:34,870 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:31:53,800 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - AuthenticationHandler: org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler successfully authenticated the user which provided the following credentials: [username: admin]
+2015-12-12 16:31:53,804 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Resolved principal admin
+2015-12-12 16:31:53,804 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Principal found: admin
+2015-12-12 16:31:53,811 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: supplied credentials: [username: admin]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:31:53 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:31:53,817 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: TGT-1-hbxuOddXRDnmPTyeCjFcelRlYjQeXoXem9PjWuLiSp51NChq0K-cas
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:31:53 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:31:53,826 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-1-shzVwEw2roThjhPQxnCz-cas] for service [http://client2.cas.com:28080/examples/servlets/] for user [admin]
+2015-12-12 16:31:53,827 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-1-shzVwEw2roThjhPQxnCz-cas for http://client2.cas.com:28080/examples/servlets/
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:31:53 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:31:54,174 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: ST-1-shzVwEw2roThjhPQxnCz-cas
+ACTION: SERVICE_TICKET_VALIDATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:31:54 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:32:17,489 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: TGT-1-hbxuOddXRDnmPTyeCjFcelRlYjQeXoXem9PjWuLiSp51NChq0K-cas
+ACTION: TICKET_GRANTING_TICKET_DESTROYED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:32:17 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:32:45,091 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - AuthenticationHandler: org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler successfully authenticated the user which provided the following credentials: [username: admin]
+2015-12-12 16:32:45,093 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Resolved principal admin
+2015-12-12 16:32:45,094 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Principal found: admin
+2015-12-12 16:32:45,095 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: supplied credentials: [username: admin]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:32:45 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:32:45,097 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: TGT-2-rtZjFfhYDWctSQP6J1aTa1pGydYf3V7bFhW97MglZl7mste1kC-cas
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:32:45 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:32:45,099 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-2-mtAS4G7xzhiI6mFsfPEa-cas] for service [http://client2.cas.com:28080/examples/servlets/] for user [admin]
+2015-12-12 16:32:45,100 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-2-mtAS4G7xzhiI6mFsfPEa-cas for http://client2.cas.com:28080/examples/servlets/
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:32:45 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:32:45,120 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: ST-2-mtAS4G7xzhiI6mFsfPEa-cas
+ACTION: SERVICE_TICKET_VALIDATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:32:45 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:32:51,156 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: TGT-2-rtZjFfhYDWctSQP6J1aTa1pGydYf3V7bFhW97MglZl7mste1kC-cas
+ACTION: TICKET_GRANTING_TICKET_DESTROYED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:32:51 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:33:34,869 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 16:33:34,869 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:35:34,866 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 16:35:34,866 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:35:55,125 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:35:55,364 WARN [org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler] - org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler is only to be used in a testing environment.  NEVER enable this in a production environment.
+2015-12-12 16:35:58,161 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2015-12-12 16:36:14,715 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Beginning ticket cleanup.
+2015-12-12 16:36:14,715 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - 0 tickets found to be removed.
+2015-12-12 16:36:14,715 INFO [org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner] - Finished ticket cleanup.
+2015-12-12 16:37:55,185 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 16:37:55,185 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:38:21,073 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 16:38:21,073 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2015-12-12 16:38:26,532 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - AuthenticationHandler: org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler successfully authenticated the user which provided the following credentials: [username: admin]
+2015-12-12 16:38:26,532 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Resolved principal admin
+2015-12-12 16:38:26,536 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Principal found: admin
+2015-12-12 16:38:26,540 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: supplied credentials: [username: admin]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:38:26 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:38:26,548 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: TGT-1-kexRWEes6MlM3XgcMhpc0y1FQDXdZ4PnatcIcYPFlzoKugB1y6-cas
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:38:26 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:38:26,556 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-1-wrNhSxp7c040pMYGpczx-cas] for service [http://client1.cas.com:18080/examples/servlets/] for user [admin]
+2015-12-12 16:38:26,556 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-1-wrNhSxp7c040pMYGpczx-cas for http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:38:26 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:38:26,841 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: ST-1-wrNhSxp7c040pMYGpczx-cas
+ACTION: SERVICE_TICKET_VALIDATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:38:26 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:38:48,765 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: TGT-1-kexRWEes6MlM3XgcMhpc0y1FQDXdZ4PnatcIcYPFlzoKugB1y6-cas
+ACTION: TICKET_GRANTING_TICKET_DESTROYED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:38:48 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:39:45,490 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - AuthenticationHandler: org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler successfully authenticated the user which provided the following credentials: [username: admin]
+2015-12-12 16:39:45,490 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Resolved principal admin
+2015-12-12 16:39:45,490 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Principal found: admin
+2015-12-12 16:39:45,490 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: supplied credentials: [username: admin]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:39:45 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:39:45,490 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: TGT-2-ZkgEPSf4OLMqxkIJPdrmDbI4A5QHBWadYgzjxAtlSqmdqJTkB5-cas
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:39:45 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:39:45,490 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-2-5KwsaB7qpauOaukBwvjK-cas] for service [http://client1.cas.com:18080/examples/servlets/] for user [admin]
+2015-12-12 16:39:45,490 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-2-5KwsaB7qpauOaukBwvjK-cas for http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:39:45 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:39:45,542 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: ST-2-5KwsaB7qpauOaukBwvjK-cas
+ACTION: SERVICE_TICKET_VALIDATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:39:45 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:39:55,183 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 16:39:55,183 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:40:10,792 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: TGT-2-ZkgEPSf4OLMqxkIJPdrmDbI4A5QHBWadYgzjxAtlSqmdqJTkB5-cas
+ACTION: TICKET_GRANTING_TICKET_DESTROYED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:40:10 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:41:55,182 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 16:41:55,183 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:42:37,504 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - AuthenticationHandler: org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler successfully authenticated the user which provided the following credentials: [username: admin]
+2015-12-12 16:42:37,506 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Resolved principal admin
+2015-12-12 16:42:37,507 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Principal found: admin
+2015-12-12 16:42:37,508 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: supplied credentials: [username: admin]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:42:37 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:42:37,509 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: TGT-3-gB9O9FAoQ0sRApnagvOJn7gcgZfUyP57fJadvHIT62ad5fRcag-cas
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:42:37 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:42:37,512 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-3-jDuBAZS11z9VndFNfq99-cas] for service [http://client1.cas.com:18080/examples/servlets/] for user [admin]
+2015-12-12 16:42:37,513 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-3-jDuBAZS11z9VndFNfq99-cas for http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:42:37 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:42:37,532 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: ST-3-jDuBAZS11z9VndFNfq99-cas
+ACTION: SERVICE_TICKET_VALIDATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:42:37 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:42:43,239 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: TGT-3-gB9O9FAoQ0sRApnagvOJn7gcgZfUyP57fJadvHIT62ad5fRcag-cas
+ACTION: TICKET_GRANTING_TICKET_DESTROYED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:42:43 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:42:57,265 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - AuthenticationHandler: org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler successfully authenticated the user which provided the following credentials: [username: admin]
+2015-12-12 16:42:57,267 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Resolved principal admin
+2015-12-12 16:42:57,268 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Principal found: admin
+2015-12-12 16:42:57,269 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: supplied credentials: [username: admin]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:42:57 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:42:57,273 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: TGT-4-1t2ipcEY0v4lHxdyKUakn795SOPVAvlMdKRlQBhjLZI9qeoQfb-cas
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:42:57 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:42:57,279 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-4-udtckt61xmAZrSoeAnoF-cas] for service [http://client1.cas.com:18080/examples/servlets/] for user [admin]
+2015-12-12 16:42:57,281 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-4-udtckt61xmAZrSoeAnoF-cas for http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:42:57 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:42:57,298 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: ST-4-udtckt61xmAZrSoeAnoF-cas
+ACTION: SERVICE_TICKET_VALIDATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:42:57 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:43:01,740 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-5-99FqLXAuispY9eGdfeTE-cas] for service [http://client2.cas.com:28080/examples/servlets/] for user [admin]
+2015-12-12 16:43:01,744 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-5-99FqLXAuispY9eGdfeTE-cas for http://client2.cas.com:28080/examples/servlets/
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:43:01 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:43:02,035 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: ST-5-99FqLXAuispY9eGdfeTE-cas
+ACTION: SERVICE_TICKET_VALIDATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:43:02 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:43:06,779 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: TGT-4-1t2ipcEY0v4lHxdyKUakn795SOPVAvlMdKRlQBhjLZI9qeoQfb-cas
+ACTION: TICKET_GRANTING_TICKET_DESTROYED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:43:06 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:43:55,178 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 16:43:55,178 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:45:55,171 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 16:45:55,172 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:46:13,308 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - AuthenticationHandler: org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler successfully authenticated the user which provided the following credentials: [username: admin]
+2015-12-12 16:46:13,315 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Resolved principal admin
+2015-12-12 16:46:13,317 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Principal found: admin
+2015-12-12 16:46:13,318 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: supplied credentials: [username: admin]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:46:13 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:46:13,326 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: TGT-5-REZHleyABALUMZzJrdLSSxmbgGOL5fobBm0n5Hn9ngSShjuCPc-cas
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:46:13 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:46:13,332 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-6-eQMuKpc1F0nkfVM2VV0G-cas] for service [http://client1.cas.com:18080/examples/servlets/] for user [admin]
+2015-12-12 16:46:13,334 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-6-eQMuKpc1F0nkfVM2VV0G-cas for http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:46:13 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:46:13,359 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: ST-6-eQMuKpc1F0nkfVM2VV0G-cas
+ACTION: SERVICE_TICKET_VALIDATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:46:13 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:46:17,271 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-7-ZqbgSEqnaozbzQcFRYQP-cas] for service [http://client2.cas.com:28080/examples/servlets/] for user [admin]
+2015-12-12 16:46:17,273 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-7-ZqbgSEqnaozbzQcFRYQP-cas for http://client2.cas.com:28080/examples/servlets/
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:46:17 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:46:17,293 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: ST-7-ZqbgSEqnaozbzQcFRYQP-cas
+ACTION: SERVICE_TICKET_VALIDATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:46:17 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:46:20,190 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: TGT-5-REZHleyABALUMZzJrdLSSxmbgGOL5fobBm0n5Hn9ngSShjuCPc-cas
+ACTION: TICKET_GRANTING_TICKET_DESTROYED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:46:20 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:47:55,171 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 16:47:55,173 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:49:47,752 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - AuthenticationHandler: org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler successfully authenticated the user which provided the following credentials: [username: admin]
+2015-12-12 16:49:47,754 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Resolved principal admin
+2015-12-12 16:49:47,756 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Principal found: admin
+2015-12-12 16:49:47,758 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: supplied credentials: [username: admin]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:49:47 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:49:47,763 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: TGT-6-Ffrkb9ck3cU36yF03Sbv1XVbbKBfv2EdACcc6SCquHT4n15SF7-cas
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:49:47 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:49:47,769 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-8-dDERlCurmqSIyev1IkE7-cas] for service [http://client1.cas.com:18080/examples/servlets/] for user [admin]
+2015-12-12 16:49:47,770 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-8-dDERlCurmqSIyev1IkE7-cas for http://client1.cas.com:18080/examples/servlets/
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:49:47 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:49:47,790 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: ST-8-dDERlCurmqSIyev1IkE7-cas
+ACTION: SERVICE_TICKET_VALIDATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:49:47 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:49:50,415 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: TGT-6-Ffrkb9ck3cU36yF03Sbv1XVbbKBfv2EdACcc6SCquHT4n15SF7-cas
+ACTION: TICKET_GRANTING_TICKET_DESTROYED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:49:50 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:49:55,171 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 16:49:55,172 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:49:58,961 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - AuthenticationHandler: org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler successfully authenticated the user which provided the following credentials: [username: admin]
+2015-12-12 16:49:58,966 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Resolved principal admin
+2015-12-12 16:49:58,967 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Principal found: admin
+2015-12-12 16:49:58,969 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: supplied credentials: [username: admin]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:49:58 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:49:58,977 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: TGT-7-2L1l3iJFcXrc6lTEov6doHPNhP5LXeJSsnx2BbYhOCgGDOucbz-cas
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:49:58 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:49:58,984 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-9-aJrx9NdtxYnzHUz5kF6s-cas] for service [http://client1.cas.com:18080/examples/servlets/servlet/HelloWorldExample] for user [admin]
+2015-12-12 16:49:58,986 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-9-aJrx9NdtxYnzHUz5kF6s-cas for http://client1.cas.com:18080/examples/servlets/servlet/HelloWorldExample
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:49:58 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:49:59,006 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: ST-9-aJrx9NdtxYnzHUz5kF6s-cas
+ACTION: SERVICE_TICKET_VALIDATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:49:59 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:50:03,901 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-10-qGnqUJDkrPsyy0FOTtfC-cas] for service [http://client2.cas.com:28080/examples/servlets/] for user [admin]
+2015-12-12 16:50:03,904 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-10-qGnqUJDkrPsyy0FOTtfC-cas for http://client2.cas.com:28080/examples/servlets/
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:50:03 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:50:03,933 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: ST-10-qGnqUJDkrPsyy0FOTtfC-cas
+ACTION: SERVICE_TICKET_VALIDATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:50:03 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:50:17,280 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: TGT-7-2L1l3iJFcXrc6lTEov6doHPNhP5LXeJSsnx2BbYhOCgGDOucbz-cas
+ACTION: TICKET_GRANTING_TICKET_DESTROYED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:50:17 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:51:00,672 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - AuthenticationHandler: org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler successfully authenticated the user which provided the following credentials: [username: admin]
+2015-12-12 16:51:00,676 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Resolved principal admin
+2015-12-12 16:51:00,678 INFO [org.jasig.cas.authentication.AuthenticationManagerImpl] - Principal found: admin
+2015-12-12 16:51:00,679 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: supplied credentials: [username: admin]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:51:00 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:51:00,686 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: admin]
+WHAT: TGT-8-yLet2JB0pdxwfwd4kDhJ4e3g4hd2oYXtuHaG2SFysseCGJtJoc-cas
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:51:00 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:51:00,693 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-11-rCW5n0VcCdveiVLk1RT3-cas] for service [http://client1.cas.com:18080/examples/servlets/servlet/HelloWorldExample] for user [admin]
+2015-12-12 16:51:00,695 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: ST-11-rCW5n0VcCdveiVLk1RT3-cas for http://client1.cas.com:18080/examples/servlets/servlet/HelloWorldExample
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:51:00 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:51:00,714 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: ST-11-rCW5n0VcCdveiVLk1RT3-cas
+ACTION: SERVICE_TICKET_VALIDATED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:51:00 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:51:22,271 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: TGT-8-yLet2JB0pdxwfwd4kDhJ4e3g4hd2oYXtuHaG2SFysseCGJtJoc-cas
+ACTION: TICKET_GRANTING_TICKET_DESTROYED
+APPLICATION: CAS
+WHEN: Sat Dec 12 16:51:22 CST 2015
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+
+2015-12-12 16:51:55,180 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 16:51:55,180 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:53:55,179 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 16:53:55,179 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:55:55,179 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 16:55:55,179 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:57:55,182 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 16:57:55,182 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.
+2015-12-12 16:59:55,171 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2015-12-12 16:59:55,172 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 4 services.

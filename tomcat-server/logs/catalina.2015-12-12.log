@@ -1,0 +1,871 @@
+12-Dec-2015 13:19:32.283 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 13:19:32.287 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 13:19:33.211 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 13:19:33.614 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 13:19:34.198 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 13:19:34.207 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2309 ms
+12-Dec-2015 13:19:34.243 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 13:19:34.243 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 13:19:34.277 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\docs
+12-Dec-2015 13:19:34.690 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\docs has finished in 412 ms
+12-Dec-2015 13:19:34.690 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\examples
+12-Dec-2015 13:19:35.516 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\examples has finished in 825 ms
+12-Dec-2015 13:19:35.517 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\host-manager
+12-Dec-2015 13:19:35.557 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\host-manager has finished in 41 ms
+12-Dec-2015 13:19:35.559 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\manager
+12-Dec-2015 13:19:35.596 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\manager has finished in 37 ms
+12-Dec-2015 13:19:35.597 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\ROOT
+12-Dec-2015 13:19:35.627 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\ROOT has finished in 30 ms
+12-Dec-2015 13:19:35.634 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 13:19:35.644 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 13:19:35.649 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1441 ms
+12-Dec-2015 13:22:55.689 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive D:\sso\tomcat-cas\webapps\cas-server-webapp-3.4.11.war
+12-Dec-2015 13:23:50.411 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 13:23:50.413 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 13:23:51.410 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 13:23:51.577 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 13:23:52.146 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 13:23:52.157 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2177 ms
+12-Dec-2015 13:23:52.190 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 13:23:52.190 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 13:23:52.217 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive D:\sso\tomcat-cas\webapps\cas.war
+12-Dec-2015 13:24:00.435 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Error filterStart
+12-Dec-2015 13:24:00.438 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Context [/cas] startup failed due to previous errors
+12-Dec-2015 13:24:00.449 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [Thread-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ org.apache.log4j.helpers.FileWatchdog.run(FileWatchdog.java:104)
+12-Dec-2015 13:24:00.459 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive D:\sso\tomcat-cas\webapps\cas.war has finished in 8,242 ms
+12-Dec-2015 13:24:00.461 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\docs
+12-Dec-2015 13:24:00.491 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\docs has finished in 29 ms
+12-Dec-2015 13:24:00.492 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\examples
+12-Dec-2015 13:24:00.890 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\examples has finished in 398 ms
+12-Dec-2015 13:24:00.892 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\host-manager
+12-Dec-2015 13:24:00.934 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\host-manager has finished in 42 ms
+12-Dec-2015 13:24:00.939 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\manager
+12-Dec-2015 13:24:01.010 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\manager has finished in 71 ms
+12-Dec-2015 13:24:01.034 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\ROOT
+12-Dec-2015 13:24:01.122 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\ROOT has finished in 88 ms
+12-Dec-2015 13:24:01.139 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 13:24:01.156 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 13:24:01.161 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 9003 ms
+12-Dec-2015 13:24:57.844 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 13:24:57.846 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 13:24:58.755 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 13:24:58.909 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 13:24:59.393 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 13:24:59.401 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1963 ms
+12-Dec-2015 13:24:59.436 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 13:24:59.436 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 13:24:59.446 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\docs
+12-Dec-2015 13:24:59.792 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\docs has finished in 346 ms
+12-Dec-2015 13:24:59.792 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\examples
+12-Dec-2015 13:25:00.316 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\examples has finished in 524 ms
+12-Dec-2015 13:25:00.317 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\host-manager
+12-Dec-2015 13:25:00.354 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\host-manager has finished in 37 ms
+12-Dec-2015 13:25:00.355 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\manager
+12-Dec-2015 13:25:00.389 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\manager has finished in 34 ms
+12-Dec-2015 13:25:00.390 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\ROOT
+12-Dec-2015 13:25:00.422 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\ROOT has finished in 32 ms
+12-Dec-2015 13:25:00.426 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 13:25:00.435 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 13:25:00.440 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1038 ms
+12-Dec-2015 13:25:34.918 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 13:25:34.920 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 13:25:35.768 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 13:25:35.924 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 13:25:36.485 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 13:25:36.495 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1969 ms
+12-Dec-2015 13:25:36.528 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 13:25:36.529 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 13:25:36.563 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive D:\sso\tomcat-cas\webapps\cas.war
+12-Dec-2015 13:25:43.502 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Error filterStart
+12-Dec-2015 13:25:43.504 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Context [/cas] startup failed due to previous errors
+12-Dec-2015 13:25:43.518 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [Thread-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ org.apache.log4j.helpers.FileWatchdog.run(FileWatchdog.java:104)
+12-Dec-2015 13:25:43.529 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive D:\sso\tomcat-cas\webapps\cas.war has finished in 6,964 ms
+12-Dec-2015 13:25:43.532 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\docs
+12-Dec-2015 13:25:43.568 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\docs has finished in 35 ms
+12-Dec-2015 13:25:43.569 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\examples
+12-Dec-2015 13:25:43.959 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\examples has finished in 390 ms
+12-Dec-2015 13:25:43.962 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\host-manager
+12-Dec-2015 13:25:43.997 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\host-manager has finished in 35 ms
+12-Dec-2015 13:25:43.999 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\manager
+12-Dec-2015 13:25:44.032 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\manager has finished in 32 ms
+12-Dec-2015 13:25:44.034 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\ROOT
+12-Dec-2015 13:25:44.064 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\ROOT has finished in 30 ms
+12-Dec-2015 13:25:44.072 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 13:25:44.082 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 13:25:44.087 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 7590 ms
+12-Dec-2015 13:32:40.764 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 13:32:40.767 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 13:32:41.646 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 13:32:41.810 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 13:32:42.336 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 13:32:42.346 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1960 ms
+12-Dec-2015 13:32:42.377 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 13:32:42.378 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 13:32:42.403 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive D:\sso\tomcat-cas\webapps\cas.war
+12-Dec-2015 13:32:48.406 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Error filterStart
+12-Dec-2015 13:32:48.408 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Context [/cas] startup failed due to previous errors
+12-Dec-2015 13:32:48.422 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [Thread-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ org.apache.log4j.helpers.FileWatchdog.run(FileWatchdog.java:104)
+12-Dec-2015 13:32:48.430 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive D:\sso\tomcat-cas\webapps\cas.war has finished in 6,026 ms
+12-Dec-2015 13:32:48.432 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\docs
+12-Dec-2015 13:32:48.475 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\docs has finished in 43 ms
+12-Dec-2015 13:32:48.477 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\examples
+12-Dec-2015 13:32:48.862 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\examples has finished in 385 ms
+12-Dec-2015 13:32:48.864 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\host-manager
+12-Dec-2015 13:32:48.897 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\host-manager has finished in 33 ms
+12-Dec-2015 13:32:48.899 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\manager
+12-Dec-2015 13:32:48.927 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\manager has finished in 28 ms
+12-Dec-2015 13:32:48.929 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\ROOT
+12-Dec-2015 13:32:48.952 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\ROOT has finished in 23 ms
+12-Dec-2015 13:32:48.959 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 13:32:48.968 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 13:32:48.972 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 6625 ms
+12-Dec-2015 13:33:42.418 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 13:33:42.420 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 13:33:43.610 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 13:33:43.794 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 13:33:44.148 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 13:33:44.155 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2133 ms
+12-Dec-2015 13:33:44.182 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 13:33:44.182 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 13:33:44.204 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive D:\sso\tomcat-cas\webapps\cas.war
+12-Dec-2015 13:33:52.213 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive D:\sso\tomcat-cas\webapps\cas.war has finished in 8,008 ms
+12-Dec-2015 13:33:52.214 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\docs
+12-Dec-2015 13:33:52.238 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\docs has finished in 24 ms
+12-Dec-2015 13:33:52.239 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\examples
+12-Dec-2015 13:33:52.564 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\examples has finished in 325 ms
+12-Dec-2015 13:33:52.565 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\host-manager
+12-Dec-2015 13:33:52.592 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\host-manager has finished in 27 ms
+12-Dec-2015 13:33:52.592 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\manager
+12-Dec-2015 13:33:52.621 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\manager has finished in 29 ms
+12-Dec-2015 13:33:52.623 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\ROOT
+12-Dec-2015 13:33:52.643 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\ROOT has finished in 21 ms
+12-Dec-2015 13:33:52.647 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 13:33:52.653 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 13:33:52.657 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 8500 ms
+12-Dec-2015 13:35:03.392 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 13:35:03.394 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 13:35:04.277 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 13:35:04.422 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 13:35:04.977 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 13:35:04.987 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1950 ms
+12-Dec-2015 13:35:05.016 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 13:35:05.016 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 13:35:05.044 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive D:\sso\tomcat-cas\webapps\cas.war
+12-Dec-2015 13:35:11.964 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Error filterStart
+12-Dec-2015 13:35:11.965 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Context [/cas] startup failed due to previous errors
+12-Dec-2015 13:35:11.982 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [Thread-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ org.apache.log4j.helpers.FileWatchdog.run(FileWatchdog.java:104)
+12-Dec-2015 13:35:11.992 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive D:\sso\tomcat-cas\webapps\cas.war has finished in 6,947 ms
+12-Dec-2015 13:35:11.994 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\docs
+12-Dec-2015 13:35:12.033 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\docs has finished in 38 ms
+12-Dec-2015 13:35:12.034 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\examples
+12-Dec-2015 13:35:12.483 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\examples has finished in 448 ms
+12-Dec-2015 13:35:12.486 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\host-manager
+12-Dec-2015 13:35:12.557 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\host-manager has finished in 70 ms
+12-Dec-2015 13:35:12.560 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\manager
+12-Dec-2015 13:35:12.598 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\manager has finished in 37 ms
+12-Dec-2015 13:35:12.608 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\ROOT
+12-Dec-2015 13:35:12.637 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\ROOT has finished in 28 ms
+12-Dec-2015 13:35:12.644 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 13:35:12.655 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 13:35:12.660 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 7672 ms
+12-Dec-2015 13:39:58.476 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 13:39:58.478 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 13:39:59.665 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 13:39:59.817 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 13:40:00.115 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 13:40:00.125 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2025 ms
+12-Dec-2015 13:40:00.160 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 13:40:00.160 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 13:40:00.183 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive D:\sso\tomcat-cas\webapps\cas.war
+12-Dec-2015 13:40:08.275 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive D:\sso\tomcat-cas\webapps\cas.war has finished in 8,091 ms
+12-Dec-2015 13:40:08.276 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\docs
+12-Dec-2015 13:40:08.296 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\docs has finished in 20 ms
+12-Dec-2015 13:40:08.297 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\examples
+12-Dec-2015 13:40:08.622 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\examples has finished in 326 ms
+12-Dec-2015 13:40:08.622 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\host-manager
+12-Dec-2015 13:40:08.655 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\host-manager has finished in 32 ms
+12-Dec-2015 13:40:08.655 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\manager
+12-Dec-2015 13:40:08.696 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\manager has finished in 41 ms
+12-Dec-2015 13:40:08.697 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-cas\webapps\ROOT
+12-Dec-2015 13:40:08.728 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-cas\webapps\ROOT has finished in 31 ms
+12-Dec-2015 13:40:08.734 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 13:40:08.739 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 13:40:08.743 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 8617 ms
+12-Dec-2015 13:46:16.799 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 13:46:16.802 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 13:46:18.045 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 13:46:18.481 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 13:46:18.924 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 13:46:18.936 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2908 ms
+12-Dec-2015 13:46:18.978 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 13:46:18.979 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 13:46:19.019 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive D:\sso\tomcat-server\webapps\cas.war
+12-Dec-2015 13:46:29.311 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive D:\sso\tomcat-server\webapps\cas.war has finished in 10,291 ms
+12-Dec-2015 13:46:29.312 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\docs
+12-Dec-2015 13:46:29.337 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\docs has finished in 25 ms
+12-Dec-2015 13:46:29.337 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\examples
+12-Dec-2015 13:46:29.894 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\examples has finished in 557 ms
+12-Dec-2015 13:46:29.895 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\host-manager
+12-Dec-2015 13:46:29.940 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\host-manager has finished in 45 ms
+12-Dec-2015 13:46:29.943 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\manager
+12-Dec-2015 13:46:29.980 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\manager has finished in 37 ms
+12-Dec-2015 13:46:29.982 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\ROOT
+12-Dec-2015 13:46:30.004 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\ROOT has finished in 22 ms
+12-Dec-2015 13:46:30.008 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 13:46:30.014 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 13:46:30.018 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 11080 ms
+12-Dec-2015 14:26:25.573 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 14:26:25.575 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 14:26:26.724 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 14:26:26.865 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 14:26:27.186 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:26:27.196 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2018 ms
+12-Dec-2015 14:26:27.217 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 14:26:27.217 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 14:26:27.248 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive D:\sso\tomcat-server\webapps\cas.war
+12-Dec-2015 14:26:34.747 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive D:\sso\tomcat-server\webapps\cas.war has finished in 7,499 ms
+12-Dec-2015 14:26:34.749 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\docs
+12-Dec-2015 14:26:34.769 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\docs has finished in 20 ms
+12-Dec-2015 14:26:34.770 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\examples
+12-Dec-2015 14:26:35.083 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\examples has finished in 313 ms
+12-Dec-2015 14:26:35.084 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\host-manager
+12-Dec-2015 14:26:35.111 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\host-manager has finished in 27 ms
+12-Dec-2015 14:26:35.112 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\manager
+12-Dec-2015 14:26:35.143 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\manager has finished in 15 ms
+12-Dec-2015 14:26:35.143 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\ROOT
+12-Dec-2015 14:26:35.158 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\ROOT has finished in 15 ms
+12-Dec-2015 14:26:35.174 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 14:26:35.174 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:26:35.174 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 7989 ms
+12-Dec-2015 14:26:35.174 SEVERE [main] org.apache.catalina.core.StandardServer.await StandardServer.await: create[localhost:8005]: 
+ java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:96)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:175)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:419)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:713)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:659)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:351)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:485)
+
+12-Dec-2015 14:26:35.190 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 14:26:35.240 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:26:35.306 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+12-Dec-2015 14:26:35.344 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [Thread-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ org.apache.log4j.helpers.FileWatchdog.run(FileWatchdog.java:104)
+12-Dec-2015 14:26:35.344 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [scheduler_Worker-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:519)
+12-Dec-2015 14:26:35.344 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [scheduler_Worker-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:519)
+12-Dec-2015 14:26:35.348 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [scheduler_Worker-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:519)
+12-Dec-2015 14:26:35.348 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [scheduler_Worker-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:519)
+12-Dec-2015 14:26:35.348 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [scheduler_Worker-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:519)
+12-Dec-2015 14:26:35.352 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [scheduler_Worker-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:519)
+12-Dec-2015 14:26:35.352 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [scheduler_Worker-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:519)
+12-Dec-2015 14:26:35.356 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [scheduler_Worker-8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:519)
+12-Dec-2015 14:26:35.356 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [scheduler_Worker-9] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:519)
+12-Dec-2015 14:26:35.360 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [scheduler_Worker-10] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:519)
+12-Dec-2015 14:26:35.376 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 14:26:35.376 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:26:35.426 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 14:26:35.426 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:26:41.889 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 14:26:41.889 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 14:26:43.061 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 14:26:43.218 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 14:26:43.518 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:26:43.518 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2024 ms
+12-Dec-2015 14:26:43.549 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 14:26:43.549 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 14:26:43.571 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive D:\sso\tomcat-server\webapps\cas.war
+12-Dec-2015 14:26:50.989 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive D:\sso\tomcat-server\webapps\cas.war has finished in 7,417 ms
+12-Dec-2015 14:26:50.990 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\docs
+12-Dec-2015 14:26:51.014 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\docs has finished in 24 ms
+12-Dec-2015 14:26:51.015 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\examples
+12-Dec-2015 14:26:51.321 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\examples has finished in 306 ms
+12-Dec-2015 14:26:51.321 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\host-manager
+12-Dec-2015 14:26:51.352 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\host-manager has finished in 31 ms
+12-Dec-2015 14:26:51.352 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\manager
+12-Dec-2015 14:26:51.383 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\manager has finished in 31 ms
+12-Dec-2015 14:26:51.383 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\ROOT
+12-Dec-2015 14:26:51.399 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\ROOT has finished in 16 ms
+12-Dec-2015 14:26:51.416 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 14:26:51.421 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:26:51.421 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 7898 ms
+12-Dec-2015 14:26:51.421 SEVERE [main] org.apache.catalina.core.StandardServer.await StandardServer.await: create[localhost:8005]: 
+ java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:96)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:175)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:419)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:713)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:659)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:351)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:485)
+
+12-Dec-2015 14:26:51.421 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 14:26:51.484 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:26:51.540 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+12-Dec-2015 14:26:51.572 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [Thread-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ org.apache.log4j.helpers.FileWatchdog.run(FileWatchdog.java:104)
+12-Dec-2015 14:26:51.572 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [scheduler_Worker-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:519)
+12-Dec-2015 14:26:51.572 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [scheduler_Worker-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:519)
+12-Dec-2015 14:26:51.572 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [scheduler_Worker-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:519)
+12-Dec-2015 14:26:51.572 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [scheduler_Worker-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:519)
+12-Dec-2015 14:26:51.572 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [scheduler_Worker-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:519)
+12-Dec-2015 14:26:51.572 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [scheduler_Worker-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:519)
+12-Dec-2015 14:26:51.587 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [scheduler_Worker-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:519)
+12-Dec-2015 14:26:51.587 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [scheduler_Worker-8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:519)
+12-Dec-2015 14:26:51.587 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [scheduler_Worker-9] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:519)
+12-Dec-2015 14:26:51.587 WARNING [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoader.clearReferencesThreads The web application [/cas] appears to have started a thread named [scheduler_Worker-10] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:519)
+12-Dec-2015 14:26:51.603 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 14:26:51.603 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:26:51.723 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 14:26:51.723 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:26:57.329 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 14:26:57.345 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 14:26:58.484 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 14:26:58.631 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 14:26:58.930 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:26:58.930 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1993 ms
+12-Dec-2015 14:26:58.970 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 14:26:58.970 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 14:26:58.985 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive D:\sso\tomcat-server\webapps\cas.war
+12-Dec-2015 14:27:06.907 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive D:\sso\tomcat-server\webapps\cas.war has finished in 7,922 ms
+12-Dec-2015 14:27:06.922 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\docs
+12-Dec-2015 14:27:06.938 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\docs has finished in 16 ms
+12-Dec-2015 14:27:06.938 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\examples
+12-Dec-2015 14:27:07.247 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\examples has finished in 309 ms
+12-Dec-2015 14:27:07.247 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\host-manager
+12-Dec-2015 14:27:07.279 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\host-manager has finished in 32 ms
+12-Dec-2015 14:27:07.279 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\manager
+12-Dec-2015 14:27:07.310 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\manager has finished in 31 ms
+12-Dec-2015 14:27:07.310 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\ROOT
+12-Dec-2015 14:27:07.326 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\ROOT has finished in 16 ms
+12-Dec-2015 14:27:07.326 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 14:27:07.342 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:27:07.342 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 8407 ms
+12-Dec-2015 14:28:21.974 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 14:28:21.974 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 14:28:23.122 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 14:28:23.269 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 14:28:23.592 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:28:23.592 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2043 ms
+12-Dec-2015 14:28:23.623 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 14:28:23.623 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 14:28:23.639 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive D:\sso\tomcat-server\webapps\cas.war
+12-Dec-2015 14:28:32.374 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive D:\sso\tomcat-server\webapps\cas.war has finished in 8,735 ms
+12-Dec-2015 14:28:32.374 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\docs
+12-Dec-2015 14:28:32.390 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\docs has finished in 16 ms
+12-Dec-2015 14:28:32.390 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\examples
+12-Dec-2015 14:28:32.706 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\examples has finished in 316 ms
+12-Dec-2015 14:28:32.706 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\host-manager
+12-Dec-2015 14:28:32.737 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\host-manager has finished in 31 ms
+12-Dec-2015 14:28:32.737 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\manager
+12-Dec-2015 14:28:32.775 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\manager has finished in 38 ms
+12-Dec-2015 14:28:32.775 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\ROOT
+12-Dec-2015 14:28:32.812 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\ROOT has finished in 37 ms
+12-Dec-2015 14:28:32.816 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 14:28:32.822 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:28:32.824 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 9223 ms
+12-Dec-2015 14:36:52.095 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 14:36:52.095 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 14:36:53.314 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 14:36:53.467 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 14:36:53.783 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:36:53.783 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2071 ms
+12-Dec-2015 14:36:53.815 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 14:36:53.815 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 14:36:53.830 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive D:\sso\tomcat-server\webapps\cas.war
+12-Dec-2015 14:37:01.225 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive D:\sso\tomcat-server\webapps\cas.war has finished in 7,395 ms
+12-Dec-2015 14:37:01.227 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\docs
+12-Dec-2015 14:37:01.252 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\docs has finished in 25 ms
+12-Dec-2015 14:37:01.253 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\examples
+12-Dec-2015 14:37:01.575 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\examples has finished in 321 ms
+12-Dec-2015 14:37:01.575 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\host-manager
+12-Dec-2015 14:37:01.607 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\host-manager has finished in 32 ms
+12-Dec-2015 14:37:01.608 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\manager
+12-Dec-2015 14:37:01.634 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\manager has finished in 26 ms
+12-Dec-2015 14:37:01.634 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\ROOT
+12-Dec-2015 14:37:01.664 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\ROOT has finished in 30 ms
+12-Dec-2015 14:37:01.670 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 14:37:01.676 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:37:01.680 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 7883 ms
+12-Dec-2015 14:44:20.241 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 14:44:20.241 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 14:44:21.428 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 14:44:21.559 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 14:44:21.909 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:44:21.919 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2099 ms
+12-Dec-2015 14:44:21.946 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 14:44:21.946 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 14:44:21.961 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive D:\sso\tomcat-server\webapps\cas.war
+12-Dec-2015 14:44:30.351 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive D:\sso\tomcat-server\webapps\cas.war has finished in 8,389 ms
+12-Dec-2015 14:44:30.353 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\docs
+12-Dec-2015 14:44:30.373 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\docs has finished in 20 ms
+12-Dec-2015 14:44:30.374 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\examples
+12-Dec-2015 14:44:30.709 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\examples has finished in 335 ms
+12-Dec-2015 14:44:30.709 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\host-manager
+12-Dec-2015 14:44:30.725 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\host-manager has finished in 16 ms
+12-Dec-2015 14:44:30.725 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\manager
+12-Dec-2015 14:44:30.756 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\manager has finished in 31 ms
+12-Dec-2015 14:44:30.756 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\ROOT
+12-Dec-2015 14:44:30.788 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\ROOT has finished in 32 ms
+12-Dec-2015 14:44:30.793 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 14:44:30.794 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:44:30.794 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 8882 ms
+12-Dec-2015 14:47:13.117 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 14:47:13.117 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 14:47:14.276 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 14:47:14.430 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 14:47:14.715 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:47:14.718 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2002 ms
+12-Dec-2015 14:47:14.750 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 14:47:14.750 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 14:47:14.765 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive D:\sso\tomcat-server\webapps\cas.war
+12-Dec-2015 14:47:23.086 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive D:\sso\tomcat-server\webapps\cas.war has finished in 8,320 ms
+12-Dec-2015 14:47:23.087 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\docs
+12-Dec-2015 14:47:23.107 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\docs has finished in 20 ms
+12-Dec-2015 14:47:23.107 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\examples
+12-Dec-2015 14:47:23.470 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\examples has finished in 363 ms
+12-Dec-2015 14:47:23.470 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\host-manager
+12-Dec-2015 14:47:23.507 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\host-manager has finished in 37 ms
+12-Dec-2015 14:47:23.507 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\manager
+12-Dec-2015 14:47:23.523 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\manager has finished in 16 ms
+12-Dec-2015 14:47:23.523 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\ROOT
+12-Dec-2015 14:47:23.554 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\ROOT has finished in 31 ms
+12-Dec-2015 14:47:23.554 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 14:47:23.570 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:47:23.570 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 8846 ms
+12-Dec-2015 14:56:56.447 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 14:56:56.447 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 14:57:10.517 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 14:57:10.517 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 14:57:11.718 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 14:57:11.860 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 14:57:12.179 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:57:12.187 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2026 ms
+12-Dec-2015 14:57:12.202 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 14:57:12.202 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 14:57:12.221 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\cas
+12-Dec-2015 14:57:20.086 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\cas has finished in 7,864 ms
+12-Dec-2015 14:57:20.087 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\docs
+12-Dec-2015 14:57:20.108 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\docs has finished in 21 ms
+12-Dec-2015 14:57:20.108 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\examples
+12-Dec-2015 14:57:20.478 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\examples has finished in 370 ms
+12-Dec-2015 14:57:20.479 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\host-manager
+12-Dec-2015 14:57:20.512 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\host-manager has finished in 33 ms
+12-Dec-2015 14:57:20.513 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\manager
+12-Dec-2015 14:57:20.540 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\manager has finished in 27 ms
+12-Dec-2015 14:57:20.541 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\ROOT
+12-Dec-2015 14:57:20.563 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\ROOT has finished in 22 ms
+12-Dec-2015 14:57:20.568 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 14:57:20.574 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:57:20.577 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 8389 ms
+12-Dec-2015 14:59:34.068 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 14:59:34.068 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 14:59:35.237 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 14:59:35.371 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 14:59:35.703 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:59:35.703 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2027 ms
+12-Dec-2015 14:59:35.741 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 14:59:35.741 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 14:59:35.741 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\cas
+12-Dec-2015 14:59:43.970 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\cas has finished in 8,229 ms
+12-Dec-2015 14:59:43.971 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\docs
+12-Dec-2015 14:59:43.992 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\docs has finished in 21 ms
+12-Dec-2015 14:59:43.993 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\examples
+12-Dec-2015 14:59:44.373 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\examples has finished in 380 ms
+12-Dec-2015 14:59:44.373 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\host-manager
+12-Dec-2015 14:59:44.388 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\host-manager has finished in 15 ms
+12-Dec-2015 14:59:44.388 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\manager
+12-Dec-2015 14:59:44.420 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\manager has finished in 32 ms
+12-Dec-2015 14:59:44.420 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\ROOT
+12-Dec-2015 14:59:44.442 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\ROOT has finished in 22 ms
+12-Dec-2015 14:59:44.442 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 14:59:44.457 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 14:59:44.457 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 8750 ms
+12-Dec-2015 15:02:26.112 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 15:02:26.112 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 15:02:27.271 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 15:02:27.403 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 15:02:27.695 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 15:02:27.707 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2006 ms
+12-Dec-2015 15:02:27.735 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 15:02:27.735 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 15:02:27.743 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\cas
+12-Dec-2015 15:02:35.561 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\cas has finished in 7,817 ms
+12-Dec-2015 15:02:35.562 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\docs
+12-Dec-2015 15:02:35.585 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\docs has finished in 23 ms
+12-Dec-2015 15:02:35.586 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\examples
+12-Dec-2015 15:02:35.930 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\examples has finished in 344 ms
+12-Dec-2015 15:02:35.930 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\host-manager
+12-Dec-2015 15:02:35.946 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\host-manager has finished in 16 ms
+12-Dec-2015 15:02:35.946 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\manager
+12-Dec-2015 15:02:35.977 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\manager has finished in 31 ms
+12-Dec-2015 15:02:35.977 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\ROOT
+12-Dec-2015 15:02:35.999 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\ROOT has finished in 22 ms
+12-Dec-2015 15:02:36.015 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 15:02:36.015 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 15:02:36.015 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 8317 ms
+12-Dec-2015 15:05:12.472 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 15:05:12.472 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 15:05:13.621 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 15:05:13.806 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 15:05:14.138 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 15:05:14.138 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2066 ms
+12-Dec-2015 15:05:14.179 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 15:05:14.179 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 15:05:14.187 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\cas
+12-Dec-2015 15:05:24.485 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\cas has finished in 10,298 ms
+12-Dec-2015 15:05:24.486 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\docs
+12-Dec-2015 15:05:24.506 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\docs has finished in 20 ms
+12-Dec-2015 15:05:24.507 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\examples
+12-Dec-2015 15:05:24.844 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\examples has finished in 337 ms
+12-Dec-2015 15:05:24.844 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\host-manager
+12-Dec-2015 15:05:24.870 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\host-manager has finished in 26 ms
+12-Dec-2015 15:05:24.871 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\manager
+12-Dec-2015 15:05:24.902 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\manager has finished in 31 ms
+12-Dec-2015 15:05:24.903 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\ROOT
+12-Dec-2015 15:05:24.927 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\ROOT has finished in 25 ms
+12-Dec-2015 15:05:24.933 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 15:05:24.938 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 15:05:24.942 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 10794 ms
+12-Dec-2015 15:13:54.169 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 15:13:54.171 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 15:13:55.386 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 15:13:55.571 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 15:13:55.967 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 15:13:55.967 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2257 ms
+12-Dec-2015 15:13:56.015 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 15:13:56.015 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 15:13:56.015 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\cas
+12-Dec-2015 15:14:07.361 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\cas has finished in 11,346 ms
+12-Dec-2015 15:14:07.362 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\docs
+12-Dec-2015 15:14:07.388 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\docs has finished in 26 ms
+12-Dec-2015 15:14:07.389 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\examples
+12-Dec-2015 15:14:07.803 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\examples has finished in 414 ms
+12-Dec-2015 15:14:07.805 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\host-manager
+12-Dec-2015 15:14:07.844 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\host-manager has finished in 40 ms
+12-Dec-2015 15:14:07.845 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\manager
+12-Dec-2015 15:14:07.879 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\manager has finished in 34 ms
+12-Dec-2015 15:14:07.880 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\ROOT
+12-Dec-2015 15:14:07.907 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\ROOT has finished in 27 ms
+12-Dec-2015 15:14:07.912 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 15:14:07.920 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 15:14:07.926 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 11943 ms
+12-Dec-2015 15:43:39.961 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 15:43:39.963 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 15:43:41.117 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 15:43:41.292 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 15:43:41.671 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 15:43:41.682 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2171 ms
+12-Dec-2015 15:43:41.722 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 15:43:41.722 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 15:43:41.734 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\cas
+12-Dec-2015 15:43:49.977 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\cas has finished in 8,243 ms
+12-Dec-2015 15:43:49.978 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\docs
+12-Dec-2015 15:43:50.000 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\docs has finished in 21 ms
+12-Dec-2015 15:43:50.000 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\examples
+12-Dec-2015 15:43:50.354 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\examples has finished in 354 ms
+12-Dec-2015 15:43:50.355 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\host-manager
+12-Dec-2015 15:43:50.380 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\host-manager has finished in 25 ms
+12-Dec-2015 15:43:50.380 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\manager
+12-Dec-2015 15:43:50.410 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\manager has finished in 30 ms
+12-Dec-2015 15:43:50.411 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\ROOT
+12-Dec-2015 15:43:50.433 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\ROOT has finished in 22 ms
+12-Dec-2015 15:43:50.438 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 15:43:50.445 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 15:43:50.449 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 8765 ms
+12-Dec-2015 15:56:18.507 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 15:56:18.523 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 15:56:19.694 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 15:56:19.887 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 15:56:20.183 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 15:56:20.191 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2081 ms
+12-Dec-2015 15:56:20.222 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 15:56:20.222 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 15:56:20.230 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\cas
+12-Dec-2015 15:56:30.891 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\cas has finished in 10,661 ms
+12-Dec-2015 15:56:30.891 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\docs
+12-Dec-2015 15:56:30.907 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\docs has finished in 16 ms
+12-Dec-2015 15:56:30.907 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\examples
+12-Dec-2015 15:56:31.223 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\examples has finished in 316 ms
+12-Dec-2015 15:56:31.223 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\host-manager
+12-Dec-2015 15:56:31.261 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\host-manager has finished in 38 ms
+12-Dec-2015 15:56:31.261 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\manager
+12-Dec-2015 15:56:31.292 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\manager has finished in 31 ms
+12-Dec-2015 15:56:31.292 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\ROOT
+12-Dec-2015 15:56:31.308 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\ROOT has finished in 16 ms
+12-Dec-2015 15:56:31.324 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 15:56:31.324 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 15:56:31.324 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 11140 ms
+12-Dec-2015 15:58:41.450 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 15:58:41.450 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 15:58:42.655 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 15:58:42.805 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 15:58:43.202 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 15:58:43.214 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2138 ms
+12-Dec-2015 15:58:43.251 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 15:58:43.251 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 15:58:43.260 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\cas
+12-Dec-2015 15:58:53.704 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\cas has finished in 10,443 ms
+12-Dec-2015 15:58:53.705 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\docs
+12-Dec-2015 15:58:53.710 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\docs has finished in 5 ms
+12-Dec-2015 15:58:53.710 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\examples
+12-Dec-2015 15:58:54.073 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\examples has finished in 363 ms
+12-Dec-2015 15:58:54.073 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\host-manager
+12-Dec-2015 15:58:54.110 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\host-manager has finished in 37 ms
+12-Dec-2015 15:58:54.110 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\manager
+12-Dec-2015 15:58:54.142 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\manager has finished in 32 ms
+12-Dec-2015 15:58:54.142 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\ROOT
+12-Dec-2015 15:58:54.157 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\ROOT has finished in 15 ms
+12-Dec-2015 15:58:54.157 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 15:58:54.173 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 15:58:54.173 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 10965 ms
+12-Dec-2015 16:01:11.510 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 16:01:11.510 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 16:01:12.733 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 16:01:12.934 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 16:01:13.344 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 16:01:13.357 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2248 ms
+12-Dec-2015 16:01:13.397 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 16:01:13.397 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 16:01:13.409 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\cas
+12-Dec-2015 16:01:22.994 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\cas has finished in 9,584 ms
+12-Dec-2015 16:01:22.995 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\docs
+12-Dec-2015 16:01:23.019 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\docs has finished in 23 ms
+12-Dec-2015 16:01:23.020 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\examples
+12-Dec-2015 16:01:23.322 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\examples has finished in 302 ms
+12-Dec-2015 16:01:23.338 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\host-manager
+12-Dec-2015 16:01:23.369 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\host-manager has finished in 31 ms
+12-Dec-2015 16:01:23.369 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\manager
+12-Dec-2015 16:01:23.391 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\manager has finished in 22 ms
+12-Dec-2015 16:01:23.391 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\ROOT
+12-Dec-2015 16:01:23.423 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\ROOT has finished in 32 ms
+12-Dec-2015 16:01:23.423 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 16:01:23.423 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 16:01:23.438 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 10083 ms
+12-Dec-2015 16:04:47.168 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 16:04:47.168 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 16:04:48.339 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 16:04:48.524 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 16:04:48.825 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 16:04:48.825 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2093 ms
+12-Dec-2015 16:04:48.856 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 16:04:48.856 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 16:04:48.871 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\cas
+12-Dec-2015 16:04:58.831 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\cas has finished in 9,960 ms
+12-Dec-2015 16:04:58.831 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\docs
+12-Dec-2015 16:04:58.863 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\docs has finished in 32 ms
+12-Dec-2015 16:04:58.863 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\examples
+12-Dec-2015 16:04:59.209 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\examples has finished in 346 ms
+12-Dec-2015 16:04:59.209 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\host-manager
+12-Dec-2015 16:04:59.245 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\host-manager has finished in 36 ms
+12-Dec-2015 16:04:59.246 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\manager
+12-Dec-2015 16:04:59.262 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\manager has finished in 16 ms
+12-Dec-2015 16:04:59.262 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\ROOT
+12-Dec-2015 16:04:59.299 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\ROOT has finished in 37 ms
+12-Dec-2015 16:04:59.303 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 16:04:59.311 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 16:04:59.311 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 10478 ms
+12-Dec-2015 16:09:51.739 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 16:09:51.739 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 16:09:52.910 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 16:09:53.057 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 16:09:53.358 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 16:09:53.358 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2065 ms
+12-Dec-2015 16:09:53.389 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 16:09:53.389 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 16:09:53.389 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\cas
+12-Dec-2015 16:10:00.957 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\cas has finished in 7,567 ms
+12-Dec-2015 16:10:00.958 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\docs
+12-Dec-2015 16:10:00.985 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\docs has finished in 27 ms
+12-Dec-2015 16:10:00.986 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\examples
+12-Dec-2015 16:10:01.329 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\examples has finished in 343 ms
+12-Dec-2015 16:10:01.329 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\host-manager
+12-Dec-2015 16:10:01.356 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\host-manager has finished in 27 ms
+12-Dec-2015 16:10:01.357 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\manager
+12-Dec-2015 16:10:01.375 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\manager has finished in 18 ms
+12-Dec-2015 16:10:01.375 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\ROOT
+12-Dec-2015 16:10:01.406 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\ROOT has finished in 31 ms
+12-Dec-2015 16:10:01.422 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 16:10:01.422 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 16:10:01.422 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 8063 ms
+12-Dec-2015 16:13:14.229 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 16:13:14.229 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 16:13:15.401 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 16:13:15.617 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 16:13:15.973 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 16:13:15.973 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2146 ms
+12-Dec-2015 16:13:16.011 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 16:13:16.011 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 16:13:16.011 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\cas
+12-Dec-2015 16:13:25.752 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\cas has finished in 9,741 ms
+12-Dec-2015 16:13:25.752 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\docs
+12-Dec-2015 16:13:25.784 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\docs has finished in 32 ms
+12-Dec-2015 16:13:25.784 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\examples
+12-Dec-2015 16:13:26.116 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\examples has finished in 332 ms
+12-Dec-2015 16:13:26.116 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\host-manager
+12-Dec-2015 16:13:26.138 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\host-manager has finished in 22 ms
+12-Dec-2015 16:13:26.138 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\manager
+12-Dec-2015 16:13:26.169 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\manager has finished in 31 ms
+12-Dec-2015 16:13:26.169 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\ROOT
+12-Dec-2015 16:13:26.200 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\ROOT has finished in 31 ms
+12-Dec-2015 16:13:26.200 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 16:13:26.200 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 16:13:26.200 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 10230 ms
+12-Dec-2015 16:15:10.513 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 16:15:10.517 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 16:15:11.733 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 16:15:11.949 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 16:15:12.285 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 16:15:12.285 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2208 ms
+12-Dec-2015 16:15:12.321 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 16:15:12.321 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 16:15:12.322 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\cas
+12-Dec-2015 16:15:21.913 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\cas has finished in 9,591 ms
+12-Dec-2015 16:15:21.915 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\docs
+12-Dec-2015 16:15:21.941 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\docs has finished in 26 ms
+12-Dec-2015 16:15:21.942 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\examples
+12-Dec-2015 16:15:22.303 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\examples has finished in 361 ms
+12-Dec-2015 16:15:22.303 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\host-manager
+12-Dec-2015 16:15:22.331 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\host-manager has finished in 28 ms
+12-Dec-2015 16:15:22.331 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\manager
+12-Dec-2015 16:15:22.355 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\manager has finished in 24 ms
+12-Dec-2015 16:15:22.355 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\ROOT
+12-Dec-2015 16:15:22.383 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\ROOT has finished in 27 ms
+12-Dec-2015 16:15:22.388 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 16:15:22.396 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 16:15:22.400 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 10104 ms
+12-Dec-2015 16:16:32.543 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 16:16:32.543 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 16:16:33.718 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 16:16:33.879 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 16:16:34.180 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 16:16:34.180 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2060 ms
+12-Dec-2015 16:16:34.228 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 16:16:34.228 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 16:16:34.238 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\cas
+12-Dec-2015 16:16:44.374 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\cas has finished in 10,136 ms
+12-Dec-2015 16:16:44.374 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\docs
+12-Dec-2015 16:16:44.405 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\docs has finished in 16 ms
+12-Dec-2015 16:16:44.405 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\examples
+12-Dec-2015 16:16:44.746 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\examples has finished in 341 ms
+12-Dec-2015 16:16:44.746 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\host-manager
+12-Dec-2015 16:16:44.774 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\host-manager has finished in 28 ms
+12-Dec-2015 16:16:44.774 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\manager
+12-Dec-2015 16:16:44.789 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\manager has finished in 15 ms
+12-Dec-2015 16:16:44.789 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\ROOT
+12-Dec-2015 16:16:44.820 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\ROOT has finished in 31 ms
+12-Dec-2015 16:16:44.820 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 16:16:44.836 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 16:16:44.836 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 10647 ms
+12-Dec-2015 16:29:26.829 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 16:29:26.829 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 16:29:28.000 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 16:29:28.174 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 16:29:28.548 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 16:29:28.548 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2109 ms
+12-Dec-2015 16:29:28.586 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 16:29:28.586 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 16:29:28.601 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\cas
+12-Dec-2015 16:29:36.935 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\cas has finished in 8,334 ms
+12-Dec-2015 16:29:36.936 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\docs
+12-Dec-2015 16:29:36.945 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\docs has finished in 9 ms
+12-Dec-2015 16:29:36.945 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\examples
+12-Dec-2015 16:29:37.309 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\examples has finished in 364 ms
+12-Dec-2015 16:29:37.309 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\host-manager
+12-Dec-2015 16:29:37.345 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\host-manager has finished in 36 ms
+12-Dec-2015 16:29:37.346 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\manager
+12-Dec-2015 16:29:37.362 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\manager has finished in 16 ms
+12-Dec-2015 16:29:37.362 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\ROOT
+12-Dec-2015 16:29:37.400 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\ROOT has finished in 38 ms
+12-Dec-2015 16:29:37.405 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 16:29:37.409 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 16:29:37.409 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 8851 ms
+12-Dec-2015 16:35:46.070 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.30 using APR version 1.4.8.
+12-Dec-2015 16:35:46.072 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Dec-2015 16:35:47.297 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1g 7 Apr 2014)
+12-Dec-2015 16:35:47.466 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 16:35:47.782 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 16:35:47.782 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2197 ms
+12-Dec-2015 16:35:47.818 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Dec-2015 16:35:47.819 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.9
+12-Dec-2015 16:35:47.820 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\cas
+12-Dec-2015 16:35:59.798 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\cas has finished in 11,978 ms
+12-Dec-2015 16:35:59.800 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\docs
+12-Dec-2015 16:35:59.827 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\docs has finished in 27 ms
+12-Dec-2015 16:35:59.828 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\examples
+12-Dec-2015 16:36:00.331 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\examples has finished in 504 ms
+12-Dec-2015 16:36:00.332 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\host-manager
+12-Dec-2015 16:36:00.379 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\host-manager has finished in 47 ms
+12-Dec-2015 16:36:00.380 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\manager
+12-Dec-2015 16:36:00.418 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\manager has finished in 39 ms
+12-Dec-2015 16:36:00.420 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\sso\tomcat-server\webapps\ROOT
+12-Dec-2015 16:36:00.452 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\sso\tomcat-server\webapps\ROOT has finished in 31 ms
+12-Dec-2015 16:36:00.458 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-bio-8443"]
+12-Dec-2015 16:36:00.465 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+12-Dec-2015 16:36:00.468 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 12673 ms
